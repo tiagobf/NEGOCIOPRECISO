@@ -25,12 +25,14 @@ Partial Class Form1
         components = New ComponentModel.Container()
         Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Form1))
         Panel1 = New Panel()
+        Button3 = New Button()
         StatusStrip1 = New StatusStrip()
         ToolStripDropDownButton1 = New ToolStripDropDownButton()
         PerfilToolStripMenuItem = New ToolStripMenuItem()
         ConfiguraçõesToolStripMenuItem = New ToolStripMenuItem()
         BloquearSistemaToolStripMenuItem = New ToolStripMenuItem()
         PictureBox5 = New PictureBox()
+        PictureBox6 = New PictureBox()
         PictureBox4 = New PictureBox()
         PictureBox3 = New PictureBox()
         PictureBox1 = New PictureBox()
@@ -45,11 +47,10 @@ Partial Class Form1
         Label4 = New Label()
         Label3 = New Label()
         ToolTip1 = New ToolTip(components)
-        PictureBox6 = New PictureBox()
-        Button3 = New Button()
         Panel1.SuspendLayout()
         StatusStrip1.SuspendLayout()
         CType(PictureBox5, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox6, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox4, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
@@ -57,7 +58,6 @@ Partial Class Form1
         Panel4.SuspendLayout()
         CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         Panel3.SuspendLayout()
-        CType(PictureBox6, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Panel1
@@ -76,6 +76,16 @@ Partial Class Form1
         Panel1.Size = New Size(1033, 88)
         Panel1.TabIndex = 0
         ' 
+        ' Button3
+        ' 
+        Button3.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        Button3.Location = New Point(928, 34)
+        Button3.Name = "Button3"
+        Button3.Size = New Size(94, 29)
+        Button3.TabIndex = 4
+        Button3.Text = "Sair"
+        Button3.UseVisualStyleBackColor = True
+        ' 
         ' StatusStrip1
         ' 
         StatusStrip1.Anchor = AnchorStyles.Top Or AnchorStyles.Right
@@ -83,10 +93,10 @@ Partial Class Form1
         StatusStrip1.Dock = DockStyle.None
         StatusStrip1.ImageScalingSize = New Size(20, 20)
         StatusStrip1.Items.AddRange(New ToolStripItem() {ToolStripDropDownButton1})
-        StatusStrip1.Location = New Point(663, 29)
+        StatusStrip1.Location = New Point(702, 29)
         StatusStrip1.Name = "StatusStrip1"
         StatusStrip1.RenderMode = ToolStripRenderMode.ManagerRenderMode
-        StatusStrip1.Size = New Size(195, 38)
+        StatusStrip1.Size = New Size(156, 38)
         StatusStrip1.TabIndex = 3
         StatusStrip1.Text = "StatusStrip1"
         ' 
@@ -104,19 +114,19 @@ Partial Class Form1
         ' PerfilToolStripMenuItem
         ' 
         PerfilToolStripMenuItem.Name = "PerfilToolStripMenuItem"
-        PerfilToolStripMenuItem.Size = New Size(224, 26)
+        PerfilToolStripMenuItem.Size = New Size(208, 26)
         PerfilToolStripMenuItem.Text = "Perfil"
         ' 
         ' ConfiguraçõesToolStripMenuItem
         ' 
         ConfiguraçõesToolStripMenuItem.Name = "ConfiguraçõesToolStripMenuItem"
-        ConfiguraçõesToolStripMenuItem.Size = New Size(224, 26)
+        ConfiguraçõesToolStripMenuItem.Size = New Size(208, 26)
         ConfiguraçõesToolStripMenuItem.Text = "Configurações"
         ' 
         ' BloquearSistemaToolStripMenuItem
         ' 
         BloquearSistemaToolStripMenuItem.Name = "BloquearSistemaToolStripMenuItem"
-        BloquearSistemaToolStripMenuItem.Size = New Size(224, 26)
+        BloquearSistemaToolStripMenuItem.Size = New Size(208, 26)
         BloquearSistemaToolStripMenuItem.Text = "Bloquear Sistema"
         ' 
         ' PictureBox5
@@ -128,6 +138,17 @@ Partial Class Form1
         PictureBox5.SizeMode = PictureBoxSizeMode.Zoom
         PictureBox5.TabIndex = 1
         PictureBox5.TabStop = False
+        ' 
+        ' PictureBox6
+        ' 
+        PictureBox6.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        PictureBox6.Image = My.Resources.Resources.avatardefault_92824
+        PictureBox6.Location = New Point(870, 23)
+        PictureBox6.Name = "PictureBox6"
+        PictureBox6.Size = New Size(50, 50)
+        PictureBox6.SizeMode = PictureBoxSizeMode.Zoom
+        PictureBox6.TabIndex = 0
+        PictureBox6.TabStop = False
         ' 
         ' PictureBox4
         ' 
@@ -247,7 +268,7 @@ Partial Class Form1
         ' PictureBox2
         ' 
         PictureBox2.Image = My.Resources.Resources.avatardefault_92824
-        PictureBox2.Location = New Point(44, 6)
+        PictureBox2.Location = New Point(44, 5)
         PictureBox2.Name = "PictureBox2"
         PictureBox2.Size = New Size(163, 122)
         PictureBox2.SizeMode = PictureBoxSizeMode.Zoom
@@ -285,25 +306,6 @@ Partial Class Form1
         Label3.TabIndex = 0
         Label3.Text = "Painel"
         ' 
-        ' PictureBox6
-        ' 
-        PictureBox6.Image = My.Resources.Resources.avatardefault_92824
-        PictureBox6.Location = New Point(870, 23)
-        PictureBox6.Name = "PictureBox6"
-        PictureBox6.Size = New Size(50, 50)
-        PictureBox6.SizeMode = PictureBoxSizeMode.Zoom
-        PictureBox6.TabIndex = 0
-        PictureBox6.TabStop = False
-        ' 
-        ' Button3
-        ' 
-        Button3.Location = New Point(927, 34)
-        Button3.Name = "Button3"
-        Button3.Size = New Size(94, 29)
-        Button3.TabIndex = 4
-        Button3.Text = "Sair"
-        Button3.UseVisualStyleBackColor = True
-        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(8F, 15F)
@@ -323,6 +325,7 @@ Partial Class Form1
         StatusStrip1.ResumeLayout(False)
         StatusStrip1.PerformLayout()
         CType(PictureBox5, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox6, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox4, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox3, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
@@ -332,7 +335,6 @@ Partial Class Form1
         CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
         Panel3.ResumeLayout(False)
         Panel3.PerformLayout()
-        CType(PictureBox6, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
 
