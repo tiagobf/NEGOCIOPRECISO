@@ -25,6 +25,9 @@ Partial Class Form1
         components = New ComponentModel.Container()
         Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Form1))
         Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Panel1 = New Panel()
         imgSair = New PictureBox()
         PictureBox6 = New PictureBox()
@@ -85,16 +88,17 @@ Partial Class Form1
         Label19 = New Label()
         Label18 = New Label()
         Panel12 = New Panel()
+        Panel14 = New Panel()
         Panel13 = New Panel()
         Label21 = New Label()
         dvgTopClientes = New DataGridView()
         codigo = New DataGridViewTextBoxColumn()
         cliente = New DataGridViewTextBoxColumn()
-        gastos = New DataGridViewTextBoxColumn()
+        gastos_mensal = New DataGridViewTextBoxColumn()
+        gastos_anual = New DataGridViewTextBoxColumn()
         status = New DataGridViewTextBoxColumn()
         Label16 = New Label()
         Label20 = New Label()
-        Panel14 = New Panel()
         Panel1.SuspendLayout()
         CType(imgSair, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox6, ComponentModel.ISupportInitialize).BeginInit()
@@ -683,7 +687,7 @@ Partial Class Form1
         ' 
         ' Panel3
         ' 
-        Panel3.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
+        Panel3.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         Panel3.BackColor = SystemColors.ActiveBorder
         Panel3.Controls.Add(PictureBox13)
         Panel3.Controls.Add(Label17)
@@ -715,7 +719,7 @@ Partial Class Form1
         ' 
         ' Panel11
         ' 
-        Panel11.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
+        Panel11.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         Panel11.BackColor = SystemColors.ActiveBorder
         Panel11.Controls.Add(Label19)
         Panel11.Controls.Add(Label18)
@@ -761,6 +765,15 @@ Partial Class Form1
         Panel12.Size = New Size(841, 389)
         Panel12.TabIndex = 5
         ' 
+        ' Panel14
+        ' 
+        Panel14.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
+        Panel14.BackColor = SystemColors.ControlLight
+        Panel14.Location = New Point(0, 41)
+        Panel14.Name = "Panel14"
+        Panel14.Size = New Size(531, 56)
+        Panel14.TabIndex = 11
+        ' 
         ' Panel13
         ' 
         Panel13.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
@@ -795,21 +808,37 @@ Partial Class Form1
         dvgTopClientes.BorderStyle = BorderStyle.None
         dvgTopClientes.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal
         dvgTopClientes.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None
-        dvgTopClientes.Columns.AddRange(New DataGridViewColumn() {codigo, cliente, gastos, status})
+        DataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = SystemColors.Window
+        DataGridViewCellStyle1.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        DataGridViewCellStyle1.ForeColor = SystemColors.WindowText
+        DataGridViewCellStyle1.SelectionBackColor = SystemColors.Window
+        DataGridViewCellStyle1.SelectionForeColor = SystemColors.ControlText
+        DataGridViewCellStyle1.WrapMode = DataGridViewTriState.True
+        dvgTopClientes.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        dvgTopClientes.Columns.AddRange(New DataGridViewColumn() {codigo, cliente, gastos_mensal, gastos_anual, status})
+        DataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle4.BackColor = SystemColors.Window
+        DataGridViewCellStyle4.Font = New Font("Sans Serif Collection", 5F, FontStyle.Regular, GraphicsUnit.Point)
+        DataGridViewCellStyle4.ForeColor = SystemColors.ControlText
+        DataGridViewCellStyle4.SelectionBackColor = SystemColors.Window
+        DataGridViewCellStyle4.SelectionForeColor = SystemColors.Desktop
+        DataGridViewCellStyle4.WrapMode = DataGridViewTriState.False
+        dvgTopClientes.DefaultCellStyle = DataGridViewCellStyle4
         dvgTopClientes.GridColor = SystemColors.Control
         dvgTopClientes.Location = New Point(0, 291)
         dvgTopClientes.Name = "dvgTopClientes"
         dvgTopClientes.ReadOnly = True
         dvgTopClientes.RowHeadersVisible = False
-        dvgTopClientes.RowTemplate.Height = 25
+        dvgTopClientes.RowTemplate.Height = 30
         dvgTopClientes.Size = New Size(838, 106)
         dvgTopClientes.TabIndex = 8
         ' 
         ' codigo
         ' 
         codigo.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
-        DataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter
-        codigo.DefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter
+        codigo.DefaultCellStyle = DataGridViewCellStyle2
         codigo.HeaderText = "#"
         codigo.Name = "codigo"
         codigo.ReadOnly = True
@@ -822,12 +851,21 @@ Partial Class Form1
         cliente.Name = "cliente"
         cliente.ReadOnly = True
         ' 
-        ' gastos
+        ' gastos_mensal
         ' 
-        gastos.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
-        gastos.HeaderText = "Gastos"
-        gastos.Name = "gastos"
-        gastos.ReadOnly = True
+        gastos_mensal.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
+        gastos_mensal.HeaderText = "Gastos Mensal"
+        gastos_mensal.Name = "gastos_mensal"
+        gastos_mensal.ReadOnly = True
+        ' 
+        ' gastos_anual
+        ' 
+        DataGridViewCellStyle3.Font = New Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold, GraphicsUnit.Point)
+        DataGridViewCellStyle3.ForeColor = Color.Firebrick
+        gastos_anual.DefaultCellStyle = DataGridViewCellStyle3
+        gastos_anual.HeaderText = "Gasto Anual"
+        gastos_anual.Name = "gastos_anual"
+        gastos_anual.ReadOnly = True
         ' 
         ' status
         ' 
@@ -863,15 +901,6 @@ Partial Class Form1
         Label20.TabIndex = 0
         Label20.Text = "        Estastistica dos Produtos"
         Label20.TextAlign = ContentAlignment.MiddleLeft
-        ' 
-        ' Panel14
-        ' 
-        Panel14.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
-        Panel14.BackColor = SystemColors.ControlLight
-        Panel14.Location = New Point(0, 41)
-        Panel14.Name = "Panel14"
-        Panel14.Size = New Size(531, 56)
-        Panel14.TabIndex = 11
         ' 
         ' Form1
         ' 
@@ -1008,4 +1037,6 @@ Partial Class Form1
     Friend WithEvents ToolStripMenuItem4 As ToolStripMenuItem
     Friend WithEvents imgSair As PictureBox
     Friend WithEvents Panel14 As Panel
+    Friend WithEvents gastos_mensal As DataGridViewTextBoxColumn
+    Friend WithEvents gastos_anual As DataGridViewTextBoxColumn
 End Class
