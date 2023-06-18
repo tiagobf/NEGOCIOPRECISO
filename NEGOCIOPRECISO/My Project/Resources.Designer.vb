@@ -163,6 +163,16 @@ Namespace My.Resources
         '''<summary>
         '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property shutdown_off_close_exit_15253() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("shutdown_off_close_exit_15253", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property statistic_chart_graph_report_finance_icon_191150() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("statistic_chart_graph_report_finance_icon_191150", resourceCulture)

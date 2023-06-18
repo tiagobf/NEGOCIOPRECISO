@@ -24,9 +24,9 @@ Partial Class Form1
     Private Sub InitializeComponent()
         components = New ComponentModel.Container()
         Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Form1))
-        Dim DataGridViewCellStyle5 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Panel1 = New Panel()
-        Label6 = New Label()
+        imgSair = New PictureBox()
         PictureBox6 = New PictureBox()
         MenuStrip1 = New MenuStrip()
         TiagoBarreoToolStripMenuItem = New ToolStripMenuItem()
@@ -48,6 +48,12 @@ Partial Class Form1
         Label1 = New Label()
         PictureBox2 = New PictureBox()
         pnCentral = New Panel()
+        MenuStrip2 = New MenuStrip()
+        ToolStripMenuItem1 = New ToolStripMenuItem()
+        ToolStripMenuItem2 = New ToolStripMenuItem()
+        ToolStripMenuItem3 = New ToolStripMenuItem()
+        ToolStripSeparator1 = New ToolStripSeparator()
+        ToolStripMenuItem4 = New ToolStripMenuItem()
         Label4 = New Label()
         Label3 = New Label()
         ToolTip1 = New ToolTip(components)
@@ -88,13 +94,9 @@ Partial Class Form1
         status = New DataGridViewTextBoxColumn()
         Label16 = New Label()
         Label20 = New Label()
-        MenuStrip2 = New MenuStrip()
-        ToolStripMenuItem1 = New ToolStripMenuItem()
-        ToolStripMenuItem2 = New ToolStripMenuItem()
-        ToolStripMenuItem3 = New ToolStripMenuItem()
-        ToolStripSeparator1 = New ToolStripSeparator()
-        ToolStripMenuItem4 = New ToolStripMenuItem()
+        Panel14 = New Panel()
         Panel1.SuspendLayout()
+        CType(imgSair, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox6, ComponentModel.ISupportInitialize).BeginInit()
         MenuStrip1.SuspendLayout()
         CType(PictureBox8, ComponentModel.ISupportInitialize).BeginInit()
@@ -107,6 +109,7 @@ Partial Class Form1
         Panel4.SuspendLayout()
         CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         pnCentral.SuspendLayout()
+        MenuStrip2.SuspendLayout()
         Panel5.SuspendLayout()
         TableLayoutPanel1.SuspendLayout()
         Panel9.SuspendLayout()
@@ -123,13 +126,12 @@ Partial Class Form1
         Panel11.SuspendLayout()
         Panel12.SuspendLayout()
         CType(dvgTopClientes, ComponentModel.ISupportInitialize).BeginInit()
-        MenuStrip2.SuspendLayout()
         SuspendLayout()
         ' 
         ' Panel1
         ' 
         Panel1.BackColor = SystemColors.ActiveCaption
-        Panel1.Controls.Add(Label6)
+        Panel1.Controls.Add(imgSair)
         Panel1.Controls.Add(PictureBox6)
         Panel1.Controls.Add(MenuStrip1)
         Panel1.Controls.Add(PictureBox8)
@@ -144,21 +146,22 @@ Partial Class Form1
         Panel1.Size = New Size(1072, 66)
         Panel1.TabIndex = 0
         ' 
-        ' Label6
+        ' imgSair
         ' 
-        Label6.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        Label6.AutoSize = True
-        Label6.Location = New Point(1019, 35)
-        Label6.Name = "Label6"
-        Label6.Size = New Size(29, 15)
-        Label6.TabIndex = 4
-        Label6.Text = "Sair"
+        imgSair.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        imgSair.Image = My.Resources.Resources.shutdown_off_close_exit_15253
+        imgSair.Location = New Point(1009, 10)
+        imgSair.Name = "imgSair"
+        imgSair.Size = New Size(50, 50)
+        imgSair.SizeMode = PictureBoxSizeMode.Zoom
+        imgSair.TabIndex = 2
+        imgSair.TabStop = False
         ' 
         ' PictureBox6
         ' 
         PictureBox6.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         PictureBox6.Image = My.Resources.Resources.avatardefault_92824
-        PictureBox6.Location = New Point(953, 16)
+        PictureBox6.Location = New Point(953, 10)
         PictureBox6.Name = "PictureBox6"
         PictureBox6.Size = New Size(50, 50)
         PictureBox6.SizeMode = PictureBoxSizeMode.Zoom
@@ -189,7 +192,7 @@ Partial Class Form1
         ' 
         PerfilToolStripMenuItem1.Image = My.Resources.Resources.user_icon_icons_com_57997
         PerfilToolStripMenuItem1.Name = "PerfilToolStripMenuItem1"
-        PerfilToolStripMenuItem1.Size = New Size(180, 22)
+        PerfilToolStripMenuItem1.Size = New Size(165, 22)
         PerfilToolStripMenuItem1.Text = "Perfil"
         PerfilToolStripMenuItem1.TextImageRelation = TextImageRelation.TextBeforeImage
         ' 
@@ -197,19 +200,19 @@ Partial Class Form1
         ' 
         ConfiguraçãoToolStripMenuItem.Image = My.Resources.Resources.fullconfiguration_settings_4501
         ConfiguraçãoToolStripMenuItem.Name = "ConfiguraçãoToolStripMenuItem"
-        ConfiguraçãoToolStripMenuItem.Size = New Size(180, 22)
+        ConfiguraçãoToolStripMenuItem.Size = New Size(165, 22)
         ConfiguraçãoToolStripMenuItem.Text = "Configurações"
         ' 
         ' BloquearSistemaToolStripMenuItem1
         ' 
         BloquearSistemaToolStripMenuItem1.Name = "BloquearSistemaToolStripMenuItem1"
-        BloquearSistemaToolStripMenuItem1.Size = New Size(177, 6)
+        BloquearSistemaToolStripMenuItem1.Size = New Size(162, 6)
         ' 
         ' BloquearSistemaToolStripMenuItem2
         ' 
         BloquearSistemaToolStripMenuItem2.Image = My.Resources.Resources.lock_padlock_symbol_for_protect_icon_icons_com_56926
         BloquearSistemaToolStripMenuItem2.Name = "BloquearSistemaToolStripMenuItem2"
-        BloquearSistemaToolStripMenuItem2.Size = New Size(180, 22)
+        BloquearSistemaToolStripMenuItem2.Size = New Size(165, 22)
         BloquearSistemaToolStripMenuItem2.Text = "Bloquear Sistema"
         ' 
         ' PictureBox8
@@ -380,6 +383,53 @@ Partial Class Form1
         pnCentral.Name = "pnCentral"
         pnCentral.Size = New Size(890, 50)
         pnCentral.TabIndex = 2
+        ' 
+        ' MenuStrip2
+        ' 
+        MenuStrip2.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        MenuStrip2.AutoSize = False
+        MenuStrip2.BackColor = Color.Transparent
+        MenuStrip2.Dock = DockStyle.None
+        MenuStrip2.Items.AddRange(New ToolStripItem() {ToolStripMenuItem1})
+        MenuStrip2.Location = New Point(645, 16)
+        MenuStrip2.Name = "MenuStrip2"
+        MenuStrip2.Size = New Size(113, 24)
+        MenuStrip2.TabIndex = 5
+        MenuStrip2.Text = "MenuStrip2"
+        ' 
+        ' ToolStripMenuItem1
+        ' 
+        ToolStripMenuItem1.DropDownItems.AddRange(New ToolStripItem() {ToolStripMenuItem2, ToolStripMenuItem3, ToolStripSeparator1, ToolStripMenuItem4})
+        ToolStripMenuItem1.Name = "ToolStripMenuItem1"
+        ToolStripMenuItem1.Size = New Size(103, 20)
+        ToolStripMenuItem1.Text = "Opções Rapidas"
+        ' 
+        ' ToolStripMenuItem2
+        ' 
+        ToolStripMenuItem2.Image = My.Resources.Resources.user_icon_icons_com_57997
+        ToolStripMenuItem2.Name = "ToolStripMenuItem2"
+        ToolStripMenuItem2.Size = New Size(165, 22)
+        ToolStripMenuItem2.Text = "Opções"
+        ToolStripMenuItem2.TextImageRelation = TextImageRelation.TextBeforeImage
+        ' 
+        ' ToolStripMenuItem3
+        ' 
+        ToolStripMenuItem3.Image = My.Resources.Resources.fullconfiguration_settings_4501
+        ToolStripMenuItem3.Name = "ToolStripMenuItem3"
+        ToolStripMenuItem3.Size = New Size(165, 22)
+        ToolStripMenuItem3.Text = "Configurações"
+        ' 
+        ' ToolStripSeparator1
+        ' 
+        ToolStripSeparator1.Name = "ToolStripSeparator1"
+        ToolStripSeparator1.Size = New Size(162, 6)
+        ' 
+        ' ToolStripMenuItem4
+        ' 
+        ToolStripMenuItem4.Image = My.Resources.Resources.lock_padlock_symbol_for_protect_icon_icons_com_56926
+        ToolStripMenuItem4.Name = "ToolStripMenuItem4"
+        ToolStripMenuItem4.Size = New Size(165, 22)
+        ToolStripMenuItem4.Text = "Bloquear Sistema"
         ' 
         ' Label4
         ' 
@@ -637,7 +687,7 @@ Partial Class Form1
         Panel3.BackColor = SystemColors.ActiveBorder
         Panel3.Controls.Add(PictureBox13)
         Panel3.Controls.Add(Label17)
-        Panel3.Location = New Point(534, 2)
+        Panel3.Location = New Point(536, 2)
         Panel3.Name = "Panel3"
         Panel3.Size = New Size(304, 95)
         Panel3.TabIndex = 6
@@ -678,7 +728,7 @@ Partial Class Form1
         ' 
         Label19.Font = New Font("Microsoft Sans Serif", 8.5F, FontStyle.Regular, GraphicsUnit.Point)
         Label19.ForeColor = SystemColors.Window
-        Label19.Location = New Point(3, 30)
+        Label19.Location = New Point(3, 36)
         Label19.Name = "Label19"
         Label19.Size = New Size(223, 57)
         Label19.TabIndex = 2
@@ -698,6 +748,7 @@ Partial Class Form1
         ' Panel12
         ' 
         Panel12.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
+        Panel12.Controls.Add(Panel14)
         Panel12.Controls.Add(Panel13)
         Panel12.Controls.Add(Label21)
         Panel12.Controls.Add(dvgTopClientes)
@@ -712,6 +763,7 @@ Partial Class Form1
         ' 
         ' Panel13
         ' 
+        Panel13.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         Panel13.BackColor = SystemColors.ControlLight
         Panel13.Location = New Point(2, 144)
         Panel13.Name = "Panel13"
@@ -756,8 +808,8 @@ Partial Class Form1
         ' codigo
         ' 
         codigo.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
-        DataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleCenter
-        codigo.DefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter
+        codigo.DefaultCellStyle = DataGridViewCellStyle1
         codigo.HeaderText = "#"
         codigo.Name = "codigo"
         codigo.ReadOnly = True
@@ -812,52 +864,14 @@ Partial Class Form1
         Label20.Text = "        Estastistica dos Produtos"
         Label20.TextAlign = ContentAlignment.MiddleLeft
         ' 
-        ' MenuStrip2
+        ' Panel14
         ' 
-        MenuStrip2.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        MenuStrip2.AutoSize = False
-        MenuStrip2.BackColor = Color.Transparent
-        MenuStrip2.Dock = DockStyle.None
-        MenuStrip2.Items.AddRange(New ToolStripItem() {ToolStripMenuItem1})
-        MenuStrip2.Location = New Point(645, 16)
-        MenuStrip2.Name = "MenuStrip2"
-        MenuStrip2.Size = New Size(113, 24)
-        MenuStrip2.TabIndex = 5
-        MenuStrip2.Text = "MenuStrip2"
-        ' 
-        ' ToolStripMenuItem1
-        ' 
-        ToolStripMenuItem1.DropDownItems.AddRange(New ToolStripItem() {ToolStripMenuItem2, ToolStripMenuItem3, ToolStripSeparator1, ToolStripMenuItem4})
-        ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        ToolStripMenuItem1.Size = New Size(103, 20)
-        ToolStripMenuItem1.Text = "Opções Rapidas"
-        ' 
-        ' ToolStripMenuItem2
-        ' 
-        ToolStripMenuItem2.Image = My.Resources.Resources.user_icon_icons_com_57997
-        ToolStripMenuItem2.Name = "ToolStripMenuItem2"
-        ToolStripMenuItem2.Size = New Size(180, 22)
-        ToolStripMenuItem2.Text = "Opções"
-        ToolStripMenuItem2.TextImageRelation = TextImageRelation.TextBeforeImage
-        ' 
-        ' ToolStripMenuItem3
-        ' 
-        ToolStripMenuItem3.Image = My.Resources.Resources.fullconfiguration_settings_4501
-        ToolStripMenuItem3.Name = "ToolStripMenuItem3"
-        ToolStripMenuItem3.Size = New Size(180, 22)
-        ToolStripMenuItem3.Text = "Configurações"
-        ' 
-        ' ToolStripSeparator1
-        ' 
-        ToolStripSeparator1.Name = "ToolStripSeparator1"
-        ToolStripSeparator1.Size = New Size(177, 6)
-        ' 
-        ' ToolStripMenuItem4
-        ' 
-        ToolStripMenuItem4.Image = My.Resources.Resources.lock_padlock_symbol_for_protect_icon_icons_com_56926
-        ToolStripMenuItem4.Name = "ToolStripMenuItem4"
-        ToolStripMenuItem4.Size = New Size(180, 22)
-        ToolStripMenuItem4.Text = "Bloquear Sistema"
+        Panel14.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
+        Panel14.BackColor = SystemColors.ControlLight
+        Panel14.Location = New Point(0, 41)
+        Panel14.Name = "Panel14"
+        Panel14.Size = New Size(531, 56)
+        Panel14.TabIndex = 11
         ' 
         ' Form1
         ' 
@@ -880,7 +894,7 @@ Partial Class Form1
         Text = "Negócio Preciso"
         WindowState = FormWindowState.Maximized
         Panel1.ResumeLayout(False)
-        Panel1.PerformLayout()
+        CType(imgSair, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox6, ComponentModel.ISupportInitialize).EndInit()
         MenuStrip1.ResumeLayout(False)
         MenuStrip1.PerformLayout()
@@ -896,6 +910,8 @@ Partial Class Form1
         CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
         pnCentral.ResumeLayout(False)
         pnCentral.PerformLayout()
+        MenuStrip2.ResumeLayout(False)
+        MenuStrip2.PerformLayout()
         Panel5.ResumeLayout(False)
         Panel5.PerformLayout()
         TableLayoutPanel1.ResumeLayout(False)
@@ -919,8 +935,6 @@ Partial Class Form1
         Panel11.PerformLayout()
         Panel12.ResumeLayout(False)
         CType(dvgTopClientes, ComponentModel.ISupportInitialize).EndInit()
-        MenuStrip2.ResumeLayout(False)
-        MenuStrip2.PerformLayout()
         ResumeLayout(False)
     End Sub
 
@@ -945,7 +959,6 @@ Partial Class Form1
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents Panel5 As Panel
     Friend WithEvents Label5 As Label
-    Friend WithEvents Label6 As Label
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
     Friend WithEvents Panel6 As Panel
     Friend WithEvents Label7 As Label
@@ -993,4 +1006,6 @@ Partial Class Form1
     Friend WithEvents ToolStripMenuItem3 As ToolStripMenuItem
     Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
     Friend WithEvents ToolStripMenuItem4 As ToolStripMenuItem
+    Friend WithEvents imgSair As PictureBox
+    Friend WithEvents Panel14 As Panel
 End Class
