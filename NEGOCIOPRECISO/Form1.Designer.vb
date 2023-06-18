@@ -24,14 +24,16 @@ Partial Class Form1
     Private Sub InitializeComponent()
         components = New ComponentModel.Container()
         Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Form1))
+        Dim DataGridViewCellStyle5 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Panel1 = New Panel()
         Label6 = New Label()
-        StatusStrip1 = New StatusStrip()
-        ToolStripDropDownButton1 = New ToolStripDropDownButton()
-        PerfilToolStripMenuItem = New ToolStripMenuItem()
-        ConfiguraçõesToolStripMenuItem = New ToolStripMenuItem()
-        BloquearSistemaToolStripMenuItem = New ToolStripMenuItem()
         PictureBox6 = New PictureBox()
+        MenuStrip1 = New MenuStrip()
+        TiagoBarreoToolStripMenuItem = New ToolStripMenuItem()
+        PerfilToolStripMenuItem1 = New ToolStripMenuItem()
+        ConfiguraçãoToolStripMenuItem = New ToolStripMenuItem()
+        BloquearSistemaToolStripMenuItem1 = New ToolStripSeparator()
+        BloquearSistemaToolStripMenuItem2 = New ToolStripMenuItem()
         PictureBox8 = New PictureBox()
         PictureBox7 = New PictureBox()
         PictureBox5 = New PictureBox()
@@ -45,7 +47,7 @@ Partial Class Form1
         Label2 = New Label()
         Label1 = New Label()
         PictureBox2 = New PictureBox()
-        Panel3 = New Panel()
+        pnCentral = New Panel()
         Label4 = New Label()
         Label3 = New Label()
         ToolTip1 = New ToolTip(components)
@@ -70,9 +72,31 @@ Partial Class Form1
         Label7 = New Label()
         Panel10 = New Panel()
         Label15 = New Label()
+        Panel3 = New Panel()
+        PictureBox13 = New PictureBox()
+        Label17 = New Label()
+        Panel11 = New Panel()
+        Label19 = New Label()
+        Label18 = New Label()
+        Panel12 = New Panel()
+        Panel13 = New Panel()
+        Label21 = New Label()
+        dvgTopClientes = New DataGridView()
+        codigo = New DataGridViewTextBoxColumn()
+        cliente = New DataGridViewTextBoxColumn()
+        gastos = New DataGridViewTextBoxColumn()
+        status = New DataGridViewTextBoxColumn()
+        Label16 = New Label()
+        Label20 = New Label()
+        MenuStrip2 = New MenuStrip()
+        ToolStripMenuItem1 = New ToolStripMenuItem()
+        ToolStripMenuItem2 = New ToolStripMenuItem()
+        ToolStripMenuItem3 = New ToolStripMenuItem()
+        ToolStripSeparator1 = New ToolStripSeparator()
+        ToolStripMenuItem4 = New ToolStripMenuItem()
         Panel1.SuspendLayout()
-        StatusStrip1.SuspendLayout()
         CType(PictureBox6, ComponentModel.ISupportInitialize).BeginInit()
+        MenuStrip1.SuspendLayout()
         CType(PictureBox8, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox7, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox5, ComponentModel.ISupportInitialize).BeginInit()
@@ -82,7 +106,7 @@ Partial Class Form1
         Panel2.SuspendLayout()
         Panel4.SuspendLayout()
         CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
-        Panel3.SuspendLayout()
+        pnCentral.SuspendLayout()
         Panel5.SuspendLayout()
         TableLayoutPanel1.SuspendLayout()
         Panel9.SuspendLayout()
@@ -94,14 +118,20 @@ Partial Class Form1
         Panel6.SuspendLayout()
         CType(PictureBox9, ComponentModel.ISupportInitialize).BeginInit()
         Panel10.SuspendLayout()
+        Panel3.SuspendLayout()
+        CType(PictureBox13, ComponentModel.ISupportInitialize).BeginInit()
+        Panel11.SuspendLayout()
+        Panel12.SuspendLayout()
+        CType(dvgTopClientes, ComponentModel.ISupportInitialize).BeginInit()
+        MenuStrip2.SuspendLayout()
         SuspendLayout()
         ' 
         ' Panel1
         ' 
         Panel1.BackColor = SystemColors.ActiveCaption
         Panel1.Controls.Add(Label6)
-        Panel1.Controls.Add(StatusStrip1)
         Panel1.Controls.Add(PictureBox6)
+        Panel1.Controls.Add(MenuStrip1)
         Panel1.Controls.Add(PictureBox8)
         Panel1.Controls.Add(PictureBox7)
         Panel1.Controls.Add(PictureBox5)
@@ -111,80 +141,81 @@ Partial Class Form1
         Panel1.Dock = DockStyle.Top
         Panel1.Location = New Point(0, 0)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(1203, 82)
+        Panel1.Size = New Size(1072, 66)
         Panel1.TabIndex = 0
         ' 
         ' Label6
         ' 
         Label6.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         Label6.AutoSize = True
-        Label6.Location = New Point(1150, 35)
+        Label6.Location = New Point(1019, 35)
         Label6.Name = "Label6"
-        Label6.Size = New Size(31, 15)
+        Label6.Size = New Size(29, 15)
         Label6.TabIndex = 4
         Label6.Text = "Sair"
-        ' 
-        ' StatusStrip1
-        ' 
-        StatusStrip1.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        StatusStrip1.BackColor = SystemColors.ActiveCaption
-        StatusStrip1.Dock = DockStyle.None
-        StatusStrip1.ImageScalingSize = New Size(20, 20)
-        StatusStrip1.Items.AddRange(New ToolStripItem() {ToolStripDropDownButton1})
-        StatusStrip1.Location = New Point(916, 22)
-        StatusStrip1.Name = "StatusStrip1"
-        StatusStrip1.RenderMode = ToolStripRenderMode.ManagerRenderMode
-        StatusStrip1.Size = New Size(156, 38)
-        StatusStrip1.TabIndex = 3
-        StatusStrip1.Text = "StatusStrip1"
-        ' 
-        ' ToolStripDropDownButton1
-        ' 
-        ToolStripDropDownButton1.DropDownItems.AddRange(New ToolStripItem() {PerfilToolStripMenuItem, ConfiguraçõesToolStripMenuItem, BloquearSistemaToolStripMenuItem})
-        ToolStripDropDownButton1.Image = CType(resources.GetObject("ToolStripDropDownButton1.Image"), Image)
-        ToolStripDropDownButton1.ImageScaling = ToolStripItemImageScaling.None
-        ToolStripDropDownButton1.ImageTransparentColor = Color.Magenta
-        ToolStripDropDownButton1.Name = "ToolStripDropDownButton1"
-        ToolStripDropDownButton1.Size = New Size(139, 36)
-        ToolStripDropDownButton1.Text = "Tiago Barreto"
-        ToolStripDropDownButton1.TextImageRelation = TextImageRelation.TextBeforeImage
-        ' 
-        ' PerfilToolStripMenuItem
-        ' 
-        PerfilToolStripMenuItem.Image = My.Resources.Resources.file_configuration_22776
-        PerfilToolStripMenuItem.Name = "PerfilToolStripMenuItem"
-        PerfilToolStripMenuItem.Size = New Size(208, 26)
-        PerfilToolStripMenuItem.Text = "Perfil"
-        ' 
-        ' ConfiguraçõesToolStripMenuItem
-        ' 
-        ConfiguraçõesToolStripMenuItem.Image = My.Resources.Resources.file_configuration_22776
-        ConfiguraçõesToolStripMenuItem.Name = "ConfiguraçõesToolStripMenuItem"
-        ConfiguraçõesToolStripMenuItem.Size = New Size(208, 26)
-        ConfiguraçõesToolStripMenuItem.Text = "Configurações"
-        ' 
-        ' BloquearSistemaToolStripMenuItem
-        ' 
-        BloquearSistemaToolStripMenuItem.Image = My.Resources.Resources.file_configuration_22776
-        BloquearSistemaToolStripMenuItem.Name = "BloquearSistemaToolStripMenuItem"
-        BloquearSistemaToolStripMenuItem.Size = New Size(208, 26)
-        BloquearSistemaToolStripMenuItem.Text = "Bloquear Sistema"
         ' 
         ' PictureBox6
         ' 
         PictureBox6.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         PictureBox6.Image = My.Resources.Resources.avatardefault_92824
-        PictureBox6.Location = New Point(1084, 16)
+        PictureBox6.Location = New Point(953, 16)
         PictureBox6.Name = "PictureBox6"
         PictureBox6.Size = New Size(50, 50)
         PictureBox6.SizeMode = PictureBoxSizeMode.Zoom
         PictureBox6.TabIndex = 0
         PictureBox6.TabStop = False
         ' 
+        ' MenuStrip1
+        ' 
+        MenuStrip1.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        MenuStrip1.AutoSize = False
+        MenuStrip1.BackColor = SystemColors.ActiveCaption
+        MenuStrip1.Dock = DockStyle.None
+        MenuStrip1.Items.AddRange(New ToolStripItem() {TiagoBarreoToolStripMenuItem})
+        MenuStrip1.Location = New Point(827, 21)
+        MenuStrip1.Name = "MenuStrip1"
+        MenuStrip1.Size = New Size(113, 24)
+        MenuStrip1.TabIndex = 1
+        MenuStrip1.Text = "MenuStrip1"
+        ' 
+        ' TiagoBarreoToolStripMenuItem
+        ' 
+        TiagoBarreoToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {PerfilToolStripMenuItem1, ConfiguraçãoToolStripMenuItem, BloquearSistemaToolStripMenuItem1, BloquearSistemaToolStripMenuItem2})
+        TiagoBarreoToolStripMenuItem.Name = "TiagoBarreoToolStripMenuItem"
+        TiagoBarreoToolStripMenuItem.Size = New Size(89, 20)
+        TiagoBarreoToolStripMenuItem.Text = "Tiago Barreto"
+        ' 
+        ' PerfilToolStripMenuItem1
+        ' 
+        PerfilToolStripMenuItem1.Image = My.Resources.Resources.user_icon_icons_com_57997
+        PerfilToolStripMenuItem1.Name = "PerfilToolStripMenuItem1"
+        PerfilToolStripMenuItem1.Size = New Size(180, 22)
+        PerfilToolStripMenuItem1.Text = "Perfil"
+        PerfilToolStripMenuItem1.TextImageRelation = TextImageRelation.TextBeforeImage
+        ' 
+        ' ConfiguraçãoToolStripMenuItem
+        ' 
+        ConfiguraçãoToolStripMenuItem.Image = My.Resources.Resources.fullconfiguration_settings_4501
+        ConfiguraçãoToolStripMenuItem.Name = "ConfiguraçãoToolStripMenuItem"
+        ConfiguraçãoToolStripMenuItem.Size = New Size(180, 22)
+        ConfiguraçãoToolStripMenuItem.Text = "Configurações"
+        ' 
+        ' BloquearSistemaToolStripMenuItem1
+        ' 
+        BloquearSistemaToolStripMenuItem1.Name = "BloquearSistemaToolStripMenuItem1"
+        BloquearSistemaToolStripMenuItem1.Size = New Size(177, 6)
+        ' 
+        ' BloquearSistemaToolStripMenuItem2
+        ' 
+        BloquearSistemaToolStripMenuItem2.Image = My.Resources.Resources.lock_padlock_symbol_for_protect_icon_icons_com_56926
+        BloquearSistemaToolStripMenuItem2.Name = "BloquearSistemaToolStripMenuItem2"
+        BloquearSistemaToolStripMenuItem2.Size = New Size(180, 22)
+        BloquearSistemaToolStripMenuItem2.Text = "Bloquear Sistema"
+        ' 
         ' PictureBox8
         ' 
         PictureBox8.Image = CType(resources.GetObject("PictureBox8.Image"), Image)
-        PictureBox8.Location = New Point(490, 16)
+        PictureBox8.Location = New Point(449, 8)
         PictureBox8.Name = "PictureBox8"
         PictureBox8.Size = New Size(50, 50)
         PictureBox8.SizeMode = PictureBoxSizeMode.Zoom
@@ -194,7 +225,7 @@ Partial Class Form1
         ' PictureBox7
         ' 
         PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), Image)
-        PictureBox7.Location = New Point(434, 16)
+        PictureBox7.Location = New Point(393, 8)
         PictureBox7.Name = "PictureBox7"
         PictureBox7.Size = New Size(50, 50)
         PictureBox7.SizeMode = PictureBoxSizeMode.Zoom
@@ -204,7 +235,7 @@ Partial Class Form1
         ' PictureBox5
         ' 
         PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), Image)
-        PictureBox5.Location = New Point(378, 16)
+        PictureBox5.Location = New Point(337, 8)
         PictureBox5.Name = "PictureBox5"
         PictureBox5.Size = New Size(50, 50)
         PictureBox5.SizeMode = PictureBoxSizeMode.Zoom
@@ -214,7 +245,7 @@ Partial Class Form1
         ' PictureBox4
         ' 
         PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), Image)
-        PictureBox4.Location = New Point(322, 16)
+        PictureBox4.Location = New Point(281, 8)
         PictureBox4.Name = "PictureBox4"
         PictureBox4.Size = New Size(50, 50)
         PictureBox4.SizeMode = PictureBoxSizeMode.Zoom
@@ -224,7 +255,7 @@ Partial Class Form1
         ' PictureBox3
         ' 
         PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), Image)
-        PictureBox3.Location = New Point(266, 16)
+        PictureBox3.Location = New Point(225, 8)
         PictureBox3.Name = "PictureBox3"
         PictureBox3.Size = New Size(50, 50)
         PictureBox3.SizeMode = PictureBoxSizeMode.Zoom
@@ -237,7 +268,7 @@ Partial Class Form1
         PictureBox1.Image = My.Resources.Resources.logo_transparent
         PictureBox1.Location = New Point(-1, -1)
         PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(206, 82)
+        PictureBox1.Size = New Size(206, 66)
         PictureBox1.SizeMode = PictureBoxSizeMode.Zoom
         PictureBox1.TabIndex = 0
         PictureBox1.TabStop = False
@@ -249,9 +280,9 @@ Partial Class Form1
         Panel2.Controls.Add(Button1)
         Panel2.Controls.Add(Panel4)
         Panel2.Dock = DockStyle.Left
-        Panel2.Location = New Point(0, 82)
+        Panel2.Location = New Point(0, 66)
         Panel2.Name = "Panel2"
-        Panel2.Size = New Size(182, 455)
+        Panel2.Size = New Size(182, 683)
         Panel2.TabIndex = 1
         ' 
         ' Button2
@@ -313,7 +344,7 @@ Partial Class Form1
         Label2.ForeColor = SystemColors.ControlDarkDark
         Label2.Location = New Point(63, 167)
         Label2.Name = "Label2"
-        Label2.Size = New Size(55, 17)
+        Label2.Size = New Size(43, 13)
         Label2.TabIndex = 1
         Label2.Text = "Gerente"
         ' 
@@ -323,7 +354,7 @@ Partial Class Form1
         Label1.Font = New Font("Corbel", 9F, FontStyle.Regular, GraphicsUnit.Point)
         Label1.Location = New Point(46, 147)
         Label1.Name = "Label1"
-        Label1.Size = New Size(91, 18)
+        Label1.Size = New Size(74, 14)
         Label1.TabIndex = 1
         Label1.Text = "Tiago Barreto"
         ' 
@@ -337,24 +368,26 @@ Partial Class Form1
         PictureBox2.TabIndex = 0
         PictureBox2.TabStop = False
         ' 
-        ' Panel3
+        ' pnCentral
         ' 
-        Panel3.BackColor = SystemColors.ControlLight
-        Panel3.Controls.Add(Label4)
-        Panel3.Controls.Add(Label3)
-        Panel3.Dock = DockStyle.Top
-        Panel3.Location = New Point(182, 82)
-        Panel3.Name = "Panel3"
-        Panel3.Size = New Size(1021, 79)
-        Panel3.TabIndex = 2
+        pnCentral.AutoScroll = True
+        pnCentral.BackColor = SystemColors.ControlLight
+        pnCentral.Controls.Add(MenuStrip2)
+        pnCentral.Controls.Add(Label4)
+        pnCentral.Controls.Add(Label3)
+        pnCentral.Dock = DockStyle.Top
+        pnCentral.Location = New Point(182, 66)
+        pnCentral.Name = "pnCentral"
+        pnCentral.Size = New Size(890, 50)
+        pnCentral.TabIndex = 2
         ' 
         ' Label4
         ' 
         Label4.AutoSize = True
         Label4.Font = New Font("Corbel", 9F, FontStyle.Regular, GraphicsUnit.Point)
-        Label4.Location = New Point(27, 44)
+        Label4.Location = New Point(28, 26)
         Label4.Name = "Label4"
-        Label4.Size = New Size(209, 18)
+        Label4.Size = New Size(171, 14)
         Label4.TabIndex = 0
         Label4.Text = "Painel / Resumo Geral do Sistema"
         ' 
@@ -362,9 +395,9 @@ Partial Class Form1
         ' 
         Label3.AutoSize = True
         Label3.Font = New Font("Corbel", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Label3.Location = New Point(27, 17)
+        Label3.Location = New Point(28, 3)
         Label3.Name = "Label3"
-        Label3.Size = New Size(62, 24)
+        Label3.Size = New Size(50, 19)
         Label3.TabIndex = 0
         Label3.Text = "Painel"
         ' 
@@ -373,18 +406,18 @@ Partial Class Form1
         Panel5.BackColor = SystemColors.ActiveCaption
         Panel5.Controls.Add(Label5)
         Panel5.Dock = DockStyle.Bottom
-        Panel5.Location = New Point(182, 476)
+        Panel5.Location = New Point(182, 716)
         Panel5.Name = "Panel5"
-        Panel5.Size = New Size(1021, 61)
+        Panel5.Size = New Size(890, 33)
         Panel5.TabIndex = 3
         ' 
         ' Label5
         ' 
         Label5.AutoSize = True
         Label5.Font = New Font("Corbel", 9F, FontStyle.Regular, GraphicsUnit.Point)
-        Label5.Location = New Point(27, 21)
+        Label5.Location = New Point(27, 9)
         Label5.Name = "Label5"
-        Label5.Size = New Size(103, 18)
+        Label5.Size = New Size(80, 14)
         Label5.TabIndex = 1
         Label5.Text = "Copyright 2023"
         ' 
@@ -400,11 +433,11 @@ Partial Class Form1
         TableLayoutPanel1.Controls.Add(Panel8, 2, 0)
         TableLayoutPanel1.Controls.Add(Panel7, 1, 0)
         TableLayoutPanel1.Controls.Add(Panel6, 0, 0)
-        TableLayoutPanel1.Location = New Point(209, 219)
+        TableLayoutPanel1.Location = New Point(207, 170)
         TableLayoutPanel1.Name = "TableLayoutPanel1"
         TableLayoutPanel1.RowCount = 1
         TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 50F))
-        TableLayoutPanel1.Size = New Size(972, 96)
+        TableLayoutPanel1.Size = New Size(841, 96)
         TableLayoutPanel1.TabIndex = 4
         ' 
         ' Panel9
@@ -413,9 +446,9 @@ Partial Class Form1
         Panel9.Controls.Add(Label13)
         Panel9.Controls.Add(PictureBox12)
         Panel9.Controls.Add(Label14)
-        Panel9.Location = New Point(732, 3)
+        Panel9.Location = New Point(633, 3)
         Panel9.Name = "Panel9"
-        Panel9.Size = New Size(237, 90)
+        Panel9.Size = New Size(205, 90)
         Panel9.TabIndex = 3
         ' 
         ' Label13
@@ -424,7 +457,7 @@ Partial Class Form1
         Label13.Font = New Font("Corbel", 9F, FontStyle.Regular, GraphicsUnit.Point)
         Label13.Location = New Point(23, 64)
         Label13.Name = "Label13"
-        Label13.Size = New Size(130, 18)
+        Label13.Size = New Size(104, 14)
         Label13.TabIndex = 1
         Label13.Text = "Faturamento do Dia"
         ' 
@@ -432,7 +465,7 @@ Partial Class Form1
         ' 
         PictureBox12.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         PictureBox12.Image = My.Resources.Resources.pie_chart_paper_notes_document_icon_131801
-        PictureBox12.Location = New Point(177, 7)
+        PictureBox12.Location = New Point(145, 7)
         PictureBox12.Name = "PictureBox12"
         PictureBox12.Size = New Size(48, 48)
         PictureBox12.TabIndex = 2
@@ -444,7 +477,7 @@ Partial Class Form1
         Label14.Font = New Font("Ebrima", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label14.Location = New Point(23, 10)
         Label14.Name = "Label14"
-        Label14.Size = New Size(109, 28)
+        Label14.Size = New Size(89, 21)
         Label14.TabIndex = 1
         Label14.Text = "R$2.900,00"
         Label14.TextAlign = ContentAlignment.MiddleCenter
@@ -455,9 +488,9 @@ Partial Class Form1
         Panel8.Controls.Add(Label11)
         Panel8.Controls.Add(PictureBox11)
         Panel8.Controls.Add(Label12)
-        Panel8.Location = New Point(489, 3)
+        Panel8.Location = New Point(423, 3)
         Panel8.Name = "Panel8"
-        Panel8.Size = New Size(237, 90)
+        Panel8.Size = New Size(204, 90)
         Panel8.TabIndex = 2
         ' 
         ' Label11
@@ -466,7 +499,7 @@ Partial Class Form1
         Label11.Font = New Font("Corbel", 9F, FontStyle.Regular, GraphicsUnit.Point)
         Label11.Location = New Point(13, 64)
         Label11.Name = "Label11"
-        Label11.Size = New Size(170, 18)
+        Label11.Size = New Size(136, 14)
         Label11.TabIndex = 1
         Label11.Text = "Faturamento do Mês Atual"
         ' 
@@ -474,7 +507,7 @@ Partial Class Form1
         ' 
         PictureBox11.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         PictureBox11.Image = My.Resources.Resources.statistic_chart_graph_report_finance_icon_191150
-        PictureBox11.Location = New Point(176, 8)
+        PictureBox11.Location = New Point(143, 8)
         PictureBox11.Name = "PictureBox11"
         PictureBox11.Size = New Size(48, 48)
         PictureBox11.TabIndex = 2
@@ -486,7 +519,7 @@ Partial Class Form1
         Label12.Font = New Font("Ebrima", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label12.Location = New Point(13, 9)
         Label12.Name = "Label12"
-        Label12.Size = New Size(109, 28)
+        Label12.Size = New Size(89, 21)
         Label12.TabIndex = 1
         Label12.Text = "R$1.450,00"
         Label12.TextAlign = ContentAlignment.MiddleCenter
@@ -497,9 +530,9 @@ Partial Class Form1
         Panel7.Controls.Add(Label9)
         Panel7.Controls.Add(PictureBox10)
         Panel7.Controls.Add(Label10)
-        Panel7.Location = New Point(246, 3)
+        Panel7.Location = New Point(213, 3)
         Panel7.Name = "Panel7"
-        Panel7.Size = New Size(237, 90)
+        Panel7.Size = New Size(204, 90)
         Panel7.TabIndex = 1
         ' 
         ' Label9
@@ -508,7 +541,7 @@ Partial Class Form1
         Label9.Font = New Font("Corbel", 9F, FontStyle.Regular, GraphicsUnit.Point)
         Label9.Location = New Point(14, 64)
         Label9.Name = "Label9"
-        Label9.Size = New Size(188, 18)
+        Label9.Size = New Size(147, 14)
         Label9.TabIndex = 1
         Label9.Text = "Produtos com estoqure baixo"
         ' 
@@ -516,7 +549,7 @@ Partial Class Form1
         ' 
         PictureBox10.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         PictureBox10.Image = CType(resources.GetObject("PictureBox10.Image"), Image)
-        PictureBox10.Location = New Point(176, 10)
+        PictureBox10.Location = New Point(143, 10)
         PictureBox10.Name = "PictureBox10"
         PictureBox10.Size = New Size(48, 48)
         PictureBox10.TabIndex = 2
@@ -528,7 +561,7 @@ Partial Class Form1
         Label10.Font = New Font("Ebrima", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label10.Location = New Point(14, 10)
         Label10.Name = "Label10"
-        Label10.Size = New Size(34, 28)
+        Label10.Size = New Size(28, 21)
         Label10.TabIndex = 1
         Label10.Text = "25"
         Label10.TextAlign = ContentAlignment.MiddleCenter
@@ -541,7 +574,7 @@ Partial Class Form1
         Panel6.Controls.Add(Label7)
         Panel6.Location = New Point(3, 3)
         Panel6.Name = "Panel6"
-        Panel6.Size = New Size(237, 90)
+        Panel6.Size = New Size(204, 90)
         Panel6.TabIndex = 0
         ' 
         ' Label8
@@ -550,7 +583,7 @@ Partial Class Form1
         Label8.Font = New Font("Corbel", 9F, FontStyle.Regular, GraphicsUnit.Point)
         Label8.Location = New Point(23, 64)
         Label8.Name = "Label8"
-        Label8.Size = New Size(105, 18)
+        Label8.Size = New Size(86, 14)
         Label8.TabIndex = 1
         Label8.Text = "Total de clientes"
         ' 
@@ -558,7 +591,7 @@ Partial Class Form1
         ' 
         PictureBox9.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         PictureBox9.Image = My.Resources.Resources.users_clients_group_167741
-        PictureBox9.Location = New Point(181, 7)
+        PictureBox9.Location = New Point(148, 7)
         PictureBox9.Name = "PictureBox9"
         PictureBox9.Size = New Size(48, 48)
         PictureBox9.TabIndex = 2
@@ -570,7 +603,7 @@ Partial Class Form1
         Label7.Font = New Font("Ebrima", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label7.Location = New Point(23, 10)
         Label7.Name = "Label7"
-        Label7.Size = New Size(56, 28)
+        Label7.Size = New Size(46, 21)
         Label7.TabIndex = 1
         Label7.Text = "3458"
         Label7.TextAlign = ContentAlignment.MiddleCenter
@@ -579,37 +612,268 @@ Partial Class Form1
         ' 
         Panel10.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         Panel10.Controls.Add(Label15)
-        Panel10.Location = New Point(209, 172)
+        Panel10.Location = New Point(206, 124)
         Panel10.Name = "Panel10"
-        Panel10.Size = New Size(972, 41)
+        Panel10.Size = New Size(841, 41)
         Panel10.TabIndex = 5
         ' 
         ' Label15
         ' 
         Label15.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         Label15.BackColor = SystemColors.Window
-        Label15.Font = New Font("Franklin Gothic Heavy", 10F, FontStyle.Regular, GraphicsUnit.Point)
+        Label15.Font = New Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point)
         Label15.Image = CType(resources.GetObject("Label15.Image"), Image)
         Label15.ImageAlign = ContentAlignment.MiddleLeft
-        Label15.Location = New Point(0, 0)
+        Label15.Location = New Point(0, 3)
         Label15.Name = "Label15"
-        Label15.Size = New Size(972, 41)
+        Label15.Size = New Size(841, 41)
         Label15.TabIndex = 0
         Label15.Text = "        Resumo Geral do Sistema"
         Label15.TextAlign = ContentAlignment.MiddleLeft
         ' 
+        ' Panel3
+        ' 
+        Panel3.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
+        Panel3.BackColor = SystemColors.ActiveBorder
+        Panel3.Controls.Add(PictureBox13)
+        Panel3.Controls.Add(Label17)
+        Panel3.Location = New Point(534, 2)
+        Panel3.Name = "Panel3"
+        Panel3.Size = New Size(304, 95)
+        Panel3.TabIndex = 6
+        ' 
+        ' PictureBox13
+        ' 
+        PictureBox13.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        PictureBox13.Image = CType(resources.GetObject("PictureBox13.Image"), Image)
+        PictureBox13.Location = New Point(245, 3)
+        PictureBox13.Name = "PictureBox13"
+        PictureBox13.Size = New Size(55, 50)
+        PictureBox13.TabIndex = 1
+        PictureBox13.TabStop = False
+        ' 
+        ' Label17
+        ' 
+        Label17.AutoSize = True
+        Label17.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label17.ForeColor = SystemColors.Window
+        Label17.Location = New Point(3, 10)
+        Label17.Name = "Label17"
+        Label17.Size = New Size(107, 20)
+        Label17.TabIndex = 0
+        Label17.Text = "Data e Hora"
+        ' 
+        ' Panel11
+        ' 
+        Panel11.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
+        Panel11.BackColor = SystemColors.ActiveBorder
+        Panel11.Controls.Add(Label19)
+        Panel11.Controls.Add(Label18)
+        Panel11.Location = New Point(536, 100)
+        Panel11.Name = "Panel11"
+        Panel11.Size = New Size(304, 144)
+        Panel11.TabIndex = 6
+        ' 
+        ' Label19
+        ' 
+        Label19.Font = New Font("Microsoft Sans Serif", 8.5F, FontStyle.Regular, GraphicsUnit.Point)
+        Label19.ForeColor = SystemColors.Window
+        Label19.Location = New Point(3, 30)
+        Label19.Name = "Label19"
+        Label19.Size = New Size(223, 57)
+        Label19.TabIndex = 2
+        Label19.Text = "O uso do sistema será de pagamento mensal. Favor não esquecer de pagar até o dia de vencimento."
+        ' 
+        ' Label18
+        ' 
+        Label18.AutoSize = True
+        Label18.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label18.ForeColor = SystemColors.Window
+        Label18.Location = New Point(3, 10)
+        Label18.Name = "Label18"
+        Label18.Size = New Size(133, 20)
+        Label18.TabIndex = 0
+        Label18.Text = "Licença de Uso"
+        ' 
+        ' Panel12
+        ' 
+        Panel12.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
+        Panel12.Controls.Add(Panel13)
+        Panel12.Controls.Add(Label21)
+        Panel12.Controls.Add(dvgTopClientes)
+        Panel12.Controls.Add(Label16)
+        Panel12.Controls.Add(Panel11)
+        Panel12.Controls.Add(Label20)
+        Panel12.Controls.Add(Panel3)
+        Panel12.Location = New Point(207, 267)
+        Panel12.Name = "Panel12"
+        Panel12.Size = New Size(841, 389)
+        Panel12.TabIndex = 5
+        ' 
+        ' Panel13
+        ' 
+        Panel13.BackColor = SystemColors.ControlLight
+        Panel13.Location = New Point(2, 144)
+        Panel13.Name = "Panel13"
+        Panel13.Size = New Size(531, 100)
+        Panel13.TabIndex = 10
+        ' 
+        ' Label21
+        ' 
+        Label21.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
+        Label21.BackColor = SystemColors.Window
+        Label21.Font = New Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point)
+        Label21.Image = My.Resources.Resources.stocks_graphic_with_a_magnifier_tool_icon_icons_com_70602
+        Label21.ImageAlign = ContentAlignment.MiddleLeft
+        Label21.Location = New Point(-3, 100)
+        Label21.Name = "Label21"
+        Label21.Size = New Size(536, 41)
+        Label21.TabIndex = 9
+        Label21.Text = "        Top 10 Clientes que mais Compram"
+        Label21.TextAlign = ContentAlignment.MiddleLeft
+        ' 
+        ' dvgTopClientes
+        ' 
+        dvgTopClientes.AllowUserToAddRows = False
+        dvgTopClientes.AllowUserToDeleteRows = False
+        dvgTopClientes.AllowUserToResizeColumns = False
+        dvgTopClientes.AllowUserToResizeRows = False
+        dvgTopClientes.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
+        dvgTopClientes.BackgroundColor = SystemColors.Window
+        dvgTopClientes.BorderStyle = BorderStyle.None
+        dvgTopClientes.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal
+        dvgTopClientes.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None
+        dvgTopClientes.Columns.AddRange(New DataGridViewColumn() {codigo, cliente, gastos, status})
+        dvgTopClientes.GridColor = SystemColors.Control
+        dvgTopClientes.Location = New Point(0, 291)
+        dvgTopClientes.Name = "dvgTopClientes"
+        dvgTopClientes.ReadOnly = True
+        dvgTopClientes.RowHeadersVisible = False
+        dvgTopClientes.RowTemplate.Height = 25
+        dvgTopClientes.Size = New Size(838, 106)
+        dvgTopClientes.TabIndex = 8
+        ' 
+        ' codigo
+        ' 
+        codigo.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
+        DataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleCenter
+        codigo.DefaultCellStyle = DataGridViewCellStyle5
+        codigo.HeaderText = "#"
+        codigo.Name = "codigo"
+        codigo.ReadOnly = True
+        codigo.Width = 39
+        ' 
+        ' cliente
+        ' 
+        cliente.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
+        cliente.HeaderText = "Nome do cliente"
+        cliente.Name = "cliente"
+        cliente.ReadOnly = True
+        ' 
+        ' gastos
+        ' 
+        gastos.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
+        gastos.HeaderText = "Gastos"
+        gastos.Name = "gastos"
+        gastos.ReadOnly = True
+        ' 
+        ' status
+        ' 
+        status.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
+        status.HeaderText = "Status"
+        status.Name = "status"
+        status.ReadOnly = True
+        ' 
+        ' Label16
+        ' 
+        Label16.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
+        Label16.BackColor = SystemColors.Window
+        Label16.Font = New Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point)
+        Label16.Image = My.Resources.Resources.stocks_graphic_with_a_magnifier_tool_icon_icons_com_70602
+        Label16.ImageAlign = ContentAlignment.MiddleLeft
+        Label16.Location = New Point(0, 247)
+        Label16.Name = "Label16"
+        Label16.Size = New Size(841, 41)
+        Label16.TabIndex = 7
+        Label16.Text = "        Top 10 Clientes que mais Compram"
+        Label16.TextAlign = ContentAlignment.MiddleLeft
+        ' 
+        ' Label20
+        ' 
+        Label20.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
+        Label20.BackColor = SystemColors.Window
+        Label20.Font = New Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point)
+        Label20.Image = My.Resources.Resources.stocks_graphic_with_a_magnifier_tool_icon_icons_com_70602
+        Label20.ImageAlign = ContentAlignment.MiddleLeft
+        Label20.Location = New Point(0, 1)
+        Label20.Name = "Label20"
+        Label20.Size = New Size(533, 41)
+        Label20.TabIndex = 0
+        Label20.Text = "        Estastistica dos Produtos"
+        Label20.TextAlign = ContentAlignment.MiddleLeft
+        ' 
+        ' MenuStrip2
+        ' 
+        MenuStrip2.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        MenuStrip2.AutoSize = False
+        MenuStrip2.BackColor = Color.Transparent
+        MenuStrip2.Dock = DockStyle.None
+        MenuStrip2.Items.AddRange(New ToolStripItem() {ToolStripMenuItem1})
+        MenuStrip2.Location = New Point(645, 16)
+        MenuStrip2.Name = "MenuStrip2"
+        MenuStrip2.Size = New Size(113, 24)
+        MenuStrip2.TabIndex = 5
+        MenuStrip2.Text = "MenuStrip2"
+        ' 
+        ' ToolStripMenuItem1
+        ' 
+        ToolStripMenuItem1.DropDownItems.AddRange(New ToolStripItem() {ToolStripMenuItem2, ToolStripMenuItem3, ToolStripSeparator1, ToolStripMenuItem4})
+        ToolStripMenuItem1.Name = "ToolStripMenuItem1"
+        ToolStripMenuItem1.Size = New Size(103, 20)
+        ToolStripMenuItem1.Text = "Opções Rapidas"
+        ' 
+        ' ToolStripMenuItem2
+        ' 
+        ToolStripMenuItem2.Image = My.Resources.Resources.user_icon_icons_com_57997
+        ToolStripMenuItem2.Name = "ToolStripMenuItem2"
+        ToolStripMenuItem2.Size = New Size(180, 22)
+        ToolStripMenuItem2.Text = "Opções"
+        ToolStripMenuItem2.TextImageRelation = TextImageRelation.TextBeforeImage
+        ' 
+        ' ToolStripMenuItem3
+        ' 
+        ToolStripMenuItem3.Image = My.Resources.Resources.fullconfiguration_settings_4501
+        ToolStripMenuItem3.Name = "ToolStripMenuItem3"
+        ToolStripMenuItem3.Size = New Size(180, 22)
+        ToolStripMenuItem3.Text = "Configurações"
+        ' 
+        ' ToolStripSeparator1
+        ' 
+        ToolStripSeparator1.Name = "ToolStripSeparator1"
+        ToolStripSeparator1.Size = New Size(177, 6)
+        ' 
+        ' ToolStripMenuItem4
+        ' 
+        ToolStripMenuItem4.Image = My.Resources.Resources.lock_padlock_symbol_for_protect_icon_icons_com_56926
+        ToolStripMenuItem4.Name = "ToolStripMenuItem4"
+        ToolStripMenuItem4.Size = New Size(180, 22)
+        ToolStripMenuItem4.Text = "Bloquear Sistema"
+        ' 
         ' Form1
         ' 
-        AutoScaleDimensions = New SizeF(8F, 15F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(1203, 537)
+        AutoScrollMargin = New Size(0, 10)
+        ClientSize = New Size(1072, 749)
+        Controls.Add(Panel12)
         Controls.Add(Panel10)
         Controls.Add(TableLayoutPanel1)
         Controls.Add(Panel5)
-        Controls.Add(Panel3)
+        Controls.Add(pnCentral)
         Controls.Add(Panel2)
         Controls.Add(Panel1)
-        Font = New Font("Footlight MT Light", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        MainMenuStrip = MenuStrip1
         Margin = New Padding(3, 2, 3, 2)
         Name = "Form1"
         StartPosition = FormStartPosition.CenterScreen
@@ -617,9 +881,9 @@ Partial Class Form1
         WindowState = FormWindowState.Maximized
         Panel1.ResumeLayout(False)
         Panel1.PerformLayout()
-        StatusStrip1.ResumeLayout(False)
-        StatusStrip1.PerformLayout()
         CType(PictureBox6, ComponentModel.ISupportInitialize).EndInit()
+        MenuStrip1.ResumeLayout(False)
+        MenuStrip1.PerformLayout()
         CType(PictureBox8, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox7, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox5, ComponentModel.ISupportInitialize).EndInit()
@@ -630,8 +894,8 @@ Partial Class Form1
         Panel4.ResumeLayout(False)
         Panel4.PerformLayout()
         CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
-        Panel3.ResumeLayout(False)
-        Panel3.PerformLayout()
+        pnCentral.ResumeLayout(False)
+        pnCentral.PerformLayout()
         Panel5.ResumeLayout(False)
         Panel5.PerformLayout()
         TableLayoutPanel1.ResumeLayout(False)
@@ -648,6 +912,15 @@ Partial Class Form1
         Panel6.PerformLayout()
         CType(PictureBox9, ComponentModel.ISupportInitialize).EndInit()
         Panel10.ResumeLayout(False)
+        Panel3.ResumeLayout(False)
+        Panel3.PerformLayout()
+        CType(PictureBox13, ComponentModel.ISupportInitialize).EndInit()
+        Panel11.ResumeLayout(False)
+        Panel11.PerformLayout()
+        Panel12.ResumeLayout(False)
+        CType(dvgTopClientes, ComponentModel.ISupportInitialize).EndInit()
+        MenuStrip2.ResumeLayout(False)
+        MenuStrip2.PerformLayout()
         ResumeLayout(False)
     End Sub
 
@@ -655,7 +928,7 @@ Partial Class Form1
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Panel4 As Panel
-    Friend WithEvents Panel3 As Panel
+    Friend WithEvents pnCentral As Panel
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents Button1 As Button
     Friend WithEvents Label2 As Label
@@ -664,12 +937,7 @@ Partial Class Form1
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents PictureBox3 As PictureBox
-    Friend WithEvents StatusStrip1 As StatusStrip
     Friend WithEvents ToolTip1 As ToolTip
-    Friend WithEvents ToolStripDropDownButton1 As ToolStripDropDownButton
-    Friend WithEvents PerfilToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ConfiguraçõesToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents BloquearSistemaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents PictureBox6 As PictureBox
     Friend WithEvents PictureBox8 As PictureBox
     Friend WithEvents PictureBox7 As PictureBox
@@ -697,4 +965,32 @@ Partial Class Form1
     Friend WithEvents Label10 As Label
     Friend WithEvents Panel10 As Panel
     Friend WithEvents Label15 As Label
+    Friend WithEvents Panel3 As Panel
+    Friend WithEvents Label17 As Label
+    Friend WithEvents PictureBox13 As PictureBox
+    Friend WithEvents Panel11 As Panel
+    Friend WithEvents Label19 As Label
+    Friend WithEvents Label18 As Label
+    Friend WithEvents Panel12 As Panel
+    Friend WithEvents Label20 As Label
+    Friend WithEvents Label16 As Label
+    Friend WithEvents dvgTopClientes As DataGridView
+    Friend WithEvents codigo As DataGridViewTextBoxColumn
+    Friend WithEvents cliente As DataGridViewTextBoxColumn
+    Friend WithEvents gastos As DataGridViewTextBoxColumn
+    Friend WithEvents status As DataGridViewTextBoxColumn
+    Friend WithEvents Label21 As Label
+    Friend WithEvents Panel13 As Panel
+    Friend WithEvents MenuStrip1 As MenuStrip
+    Friend WithEvents TiagoBarreoToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents PerfilToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents ConfiguraçãoToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents BloquearSistemaToolStripMenuItem1 As ToolStripSeparator
+    Friend WithEvents BloquearSistemaToolStripMenuItem2 As ToolStripMenuItem
+    Friend WithEvents MenuStrip2 As MenuStrip
+    Friend WithEvents ToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem2 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem3 As ToolStripMenuItem
+    Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
+    Friend WithEvents ToolStripMenuItem4 As ToolStripMenuItem
 End Class
