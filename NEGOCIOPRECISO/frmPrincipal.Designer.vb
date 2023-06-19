@@ -24,10 +24,10 @@ Partial Class frmPrincipal
     Private Sub InitializeComponent()
         components = New ComponentModel.Container()
         Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(frmPrincipal))
-        Dim DataGridViewCellStyle5 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle8 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle7 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Panel1 = New Panel()
         imgSair = New PictureBox()
         PictureBox6 = New PictureBox()
@@ -39,7 +39,7 @@ Partial Class frmPrincipal
         BloquearSistemaToolStripMenuItem2 = New ToolStripMenuItem()
         PicConfiguracoes = New PictureBox()
         PicAjuda = New PictureBox()
-        PictureBox5 = New PictureBox()
+        PicSobre = New PictureBox()
         PictureBox4 = New PictureBox()
         PictureBox3 = New PictureBox()
         PictureBox1 = New PictureBox()
@@ -99,14 +99,13 @@ Partial Class frmPrincipal
         status = New DataGridViewTextBoxColumn()
         Label16 = New Label()
         Label20 = New Label()
-        PicSobre = New PictureBox()
         Panel1.SuspendLayout()
         CType(imgSair, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox6, ComponentModel.ISupportInitialize).BeginInit()
         MenuStrip1.SuspendLayout()
         CType(PicConfiguracoes, ComponentModel.ISupportInitialize).BeginInit()
         CType(PicAjuda, ComponentModel.ISupportInitialize).BeginInit()
-        CType(PictureBox5, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PicSobre, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox4, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
@@ -131,7 +130,6 @@ Partial Class frmPrincipal
         Panel11.SuspendLayout()
         Panel12.SuspendLayout()
         CType(dvgTopClientes, ComponentModel.ISupportInitialize).BeginInit()
-        CType(PicSobre, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Panel1
@@ -143,7 +141,6 @@ Partial Class frmPrincipal
         Panel1.Controls.Add(PicConfiguracoes)
         Panel1.Controls.Add(PicAjuda)
         Panel1.Controls.Add(PicSobre)
-        Panel1.Controls.Add(PictureBox5)
         Panel1.Controls.Add(PictureBox4)
         Panel1.Controls.Add(PictureBox3)
         Panel1.Controls.Add(PictureBox1)
@@ -243,15 +240,15 @@ Partial Class frmPrincipal
         PicAjuda.TabIndex = 1
         PicAjuda.TabStop = False
         ' 
-        ' PictureBox5
+        ' PicSobre
         ' 
-        PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), Image)
-        PictureBox5.Location = New Point(337, 8)
-        PictureBox5.Name = "PictureBox5"
-        PictureBox5.Size = New Size(50, 50)
-        PictureBox5.SizeMode = PictureBoxSizeMode.Zoom
-        PictureBox5.TabIndex = 1
-        PictureBox5.TabStop = False
+        PicSobre.Image = My.Resources.Resources.book_bookmark_icon_34486
+        PicSobre.Location = New Point(337, 8)
+        PicSobre.Name = "PicSobre"
+        PicSobre.Size = New Size(50, 50)
+        PicSobre.SizeMode = PictureBoxSizeMode.Zoom
+        PicSobre.TabIndex = 1
+        PicSobre.TabStop = False
         ' 
         ' PictureBox4
         ' 
@@ -813,24 +810,24 @@ Partial Class frmPrincipal
         dvgTopClientes.BorderStyle = BorderStyle.None
         dvgTopClientes.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal
         dvgTopClientes.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle5.BackColor = SystemColors.Window
-        DataGridViewCellStyle5.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point)
-        DataGridViewCellStyle5.ForeColor = SystemColors.WindowText
-        DataGridViewCellStyle5.SelectionBackColor = SystemColors.Window
-        DataGridViewCellStyle5.SelectionForeColor = SystemColors.ControlText
-        DataGridViewCellStyle5.WrapMode = DataGridViewTriState.True
-        dvgTopClientes.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = SystemColors.Window
+        DataGridViewCellStyle1.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        DataGridViewCellStyle1.ForeColor = SystemColors.WindowText
+        DataGridViewCellStyle1.SelectionBackColor = SystemColors.Window
+        DataGridViewCellStyle1.SelectionForeColor = SystemColors.ControlText
+        DataGridViewCellStyle1.WrapMode = DataGridViewTriState.True
+        dvgTopClientes.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         dvgTopClientes.ColumnHeadersHeight = 29
         dvgTopClientes.Columns.AddRange(New DataGridViewColumn() {codigo, cliente, gastos_mensal, gastos_anual, status})
-        DataGridViewCellStyle8.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle8.BackColor = SystemColors.Window
-        DataGridViewCellStyle8.Font = New Font("Microsoft Sans Serif", 5F, FontStyle.Regular, GraphicsUnit.Point)
-        DataGridViewCellStyle8.ForeColor = SystemColors.ControlText
-        DataGridViewCellStyle8.SelectionBackColor = SystemColors.Window
-        DataGridViewCellStyle8.SelectionForeColor = SystemColors.Desktop
-        DataGridViewCellStyle8.WrapMode = DataGridViewTriState.False
-        dvgTopClientes.DefaultCellStyle = DataGridViewCellStyle8
+        DataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle4.BackColor = SystemColors.Window
+        DataGridViewCellStyle4.Font = New Font("Microsoft Sans Serif", 5F, FontStyle.Regular, GraphicsUnit.Point)
+        DataGridViewCellStyle4.ForeColor = SystemColors.ControlText
+        DataGridViewCellStyle4.SelectionBackColor = SystemColors.Window
+        DataGridViewCellStyle4.SelectionForeColor = SystemColors.Desktop
+        DataGridViewCellStyle4.WrapMode = DataGridViewTriState.False
+        dvgTopClientes.DefaultCellStyle = DataGridViewCellStyle4
         dvgTopClientes.GridColor = SystemColors.Control
         dvgTopClientes.Location = New Point(-5, 291)
         dvgTopClientes.Name = "dvgTopClientes"
@@ -844,8 +841,8 @@ Partial Class frmPrincipal
         ' codigo
         ' 
         codigo.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
-        DataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleCenter
-        codigo.DefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter
+        codigo.DefaultCellStyle = DataGridViewCellStyle2
         codigo.HeaderText = "#"
         codigo.MinimumWidth = 6
         codigo.Name = "codigo"
@@ -870,9 +867,9 @@ Partial Class frmPrincipal
         ' 
         ' gastos_anual
         ' 
-        DataGridViewCellStyle7.Font = New Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold, GraphicsUnit.Point)
-        DataGridViewCellStyle7.ForeColor = Color.Firebrick
-        gastos_anual.DefaultCellStyle = DataGridViewCellStyle7
+        DataGridViewCellStyle3.Font = New Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold, GraphicsUnit.Point)
+        DataGridViewCellStyle3.ForeColor = Color.Firebrick
+        gastos_anual.DefaultCellStyle = DataGridViewCellStyle3
         gastos_anual.HeaderText = "Gasto Anual"
         gastos_anual.MinimumWidth = 6
         gastos_anual.Name = "gastos_anual"
@@ -915,16 +912,6 @@ Partial Class frmPrincipal
         Label20.Text = "        Estastistica dos Produtos"
         Label20.TextAlign = ContentAlignment.MiddleLeft
         ' 
-        ' PicSobre
-        ' 
-        PicSobre.Image = My.Resources.Resources.book_bookmark_icon_34486
-        PicSobre.Location = New Point(505, 8)
-        PicSobre.Name = "PicSobre"
-        PicSobre.Size = New Size(50, 50)
-        PicSobre.SizeMode = PictureBoxSizeMode.Zoom
-        PicSobre.TabIndex = 1
-        PicSobre.TabStop = False
-        ' 
         ' frmPrincipal
         ' 
         AutoScaleDimensions = New SizeF(9F, 18F)
@@ -952,7 +939,7 @@ Partial Class frmPrincipal
         MenuStrip1.PerformLayout()
         CType(PicConfiguracoes, ComponentModel.ISupportInitialize).EndInit()
         CType(PicAjuda, ComponentModel.ISupportInitialize).EndInit()
-        CType(PictureBox5, ComponentModel.ISupportInitialize).EndInit()
+        CType(PicSobre, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox4, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox3, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
@@ -987,7 +974,6 @@ Partial Class frmPrincipal
         Panel11.PerformLayout()
         Panel12.ResumeLayout(False)
         CType(dvgTopClientes, ComponentModel.ISupportInitialize).EndInit()
-        CType(PicSobre, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
 
@@ -1008,7 +994,6 @@ Partial Class frmPrincipal
     Friend WithEvents PictureBox6 As PictureBox
     Friend WithEvents PicConfiguracoes As PictureBox
     Friend WithEvents PicAjuda As PictureBox
-    Friend WithEvents PictureBox5 As PictureBox
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents Panel5 As Panel
     Friend WithEvents Label5 As Label

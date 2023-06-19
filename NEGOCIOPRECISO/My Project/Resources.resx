@@ -121,14 +121,17 @@
   <data name="icons8-chamada-em-conferência-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-chamada-em-conferência-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="users_clients_group_167741" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\users_clients_group_167741.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="stocks-graphic-with-a-magnifier-tool_icon-icons.com_70602" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\stocks-graphic-with-a-magnifier-tool_icon-icons.com_70602.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="fullconfiguration_settings_4501" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fullconfiguration_settings_4501.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="logo_transparent" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo_transparent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-chamada-em-conferência-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-chamada-em-conferência-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="shutdown_off_close_exit_15253" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\shutdown_off_close_exit_15253.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -154,25 +157,28 @@
   <data name="file_configuration_22776" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\file_configuration_22776.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="users_clients_group_16774" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\users_clients_group_16774.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="users_clients_group_16774 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\users_clients_group_16774 (1).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pie_chart_paper_notes_document_icon_131801" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pie_chart_paper_notes_document_icon_131801.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fullconfiguration_settings_4501" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fullconfiguration_settings_4501.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="users_clients_group_16774" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\users_clients_group_16774.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="book-bookmark-icon_34486" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\book-bookmark-icon_34486.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="user_icon-icons.com_57997" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user_icon-icons.com_57997.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="users_clients_group_167741" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\users_clients_group_167741.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8-chamada-em-conferência-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-chamada-em-conferência-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="book-bookmark-icon_34486" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\book-bookmark-icon_34486.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="book-bookmark-icon_344861" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\book-bookmark-icon_344861.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="system_applications_thesource_thebook_13028" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\system_applications_thesource_thebook_13028.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

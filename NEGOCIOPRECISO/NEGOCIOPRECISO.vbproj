@@ -6,7 +6,12 @@
     <StartupObject>NEGOCIOPRECISO.frmPrincipal</StartupObject>
     <UseWindowsForms>true</UseWindowsForms>
     <MyType>WindowsForms</MyType>
+    <ApplicationIcon>logo_transparent.ico</ApplicationIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="logo_transparent.ico" />
+  </ItemGroup>
 
   <ItemGroup>
     <Import Include="System.Data" />

@@ -83,6 +83,16 @@ Namespace My.Resources
         '''<summary>
         '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property book_bookmark_icon_344861() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("book-bookmark-icon_344861", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property file_configuration_22776() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("file_configuration_22776", resourceCulture)
@@ -206,6 +216,16 @@ Namespace My.Resources
         Friend ReadOnly Property stocks_graphic_with_a_magnifier_tool_icon_icons_com_70602() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("stocks-graphic-with-a-magnifier-tool_icon-icons.com_70602", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property system_applications_thesource_thebook_13028() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("system_applications_thesource_thebook_13028", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
