@@ -130,8 +130,14 @@
   <data name="icons8-chamada-em-conferência-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-chamada-em-conferência-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="shutdown_off_close_exit_15253" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shutdown_off_close_exit_15253.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icons8-chamada-em-conferência-641" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-chamada-em-conferência-641.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Help_icon-icons.com_73700" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Help_icon-icons.com_73700.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="statistic_chart_graph_report_finance_icon_191150" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\statistic_chart_graph_report_finance_icon_191150.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -166,7 +172,7 @@
   <data name="users_clients_group_167741" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\users_clients_group_167741.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="shutdown_off_close_exit_15253" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\shutdown_off_close_exit_15253.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="book-bookmark-icon_34486" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\book-bookmark-icon_34486.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

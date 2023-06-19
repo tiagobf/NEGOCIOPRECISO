@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Form1
+Partial Class frmPrincipal
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -23,11 +23,11 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         components = New ComponentModel.Container()
-        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Form1))
-        Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(frmPrincipal))
+        Dim DataGridViewCellStyle5 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle8 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle7 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Panel1 = New Panel()
         imgSair = New PictureBox()
         PictureBox6 = New PictureBox()
@@ -37,8 +37,8 @@ Partial Class Form1
         ConfiguraçãoToolStripMenuItem = New ToolStripMenuItem()
         BloquearSistemaToolStripMenuItem1 = New ToolStripSeparator()
         BloquearSistemaToolStripMenuItem2 = New ToolStripMenuItem()
-        PictureBox8 = New PictureBox()
-        PictureBox7 = New PictureBox()
+        PicConfiguracoes = New PictureBox()
+        PicAjuda = New PictureBox()
         PictureBox5 = New PictureBox()
         PictureBox4 = New PictureBox()
         PictureBox3 = New PictureBox()
@@ -99,12 +99,13 @@ Partial Class Form1
         status = New DataGridViewTextBoxColumn()
         Label16 = New Label()
         Label20 = New Label()
+        PicSobre = New PictureBox()
         Panel1.SuspendLayout()
         CType(imgSair, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox6, ComponentModel.ISupportInitialize).BeginInit()
         MenuStrip1.SuspendLayout()
-        CType(PictureBox8, ComponentModel.ISupportInitialize).BeginInit()
-        CType(PictureBox7, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PicConfiguracoes, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PicAjuda, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox5, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox4, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
@@ -130,6 +131,7 @@ Partial Class Form1
         Panel11.SuspendLayout()
         Panel12.SuspendLayout()
         CType(dvgTopClientes, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PicSobre, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Panel1
@@ -138,8 +140,9 @@ Partial Class Form1
         Panel1.Controls.Add(imgSair)
         Panel1.Controls.Add(PictureBox6)
         Panel1.Controls.Add(MenuStrip1)
-        Panel1.Controls.Add(PictureBox8)
-        Panel1.Controls.Add(PictureBox7)
+        Panel1.Controls.Add(PicConfiguracoes)
+        Panel1.Controls.Add(PicAjuda)
+        Panel1.Controls.Add(PicSobre)
         Panel1.Controls.Add(PictureBox5)
         Panel1.Controls.Add(PictureBox4)
         Panel1.Controls.Add(PictureBox3)
@@ -178,6 +181,7 @@ Partial Class Form1
         MenuStrip1.AutoSize = False
         MenuStrip1.BackColor = SystemColors.ActiveCaption
         MenuStrip1.Dock = DockStyle.None
+        MenuStrip1.ImageScalingSize = New Size(20, 20)
         MenuStrip1.Items.AddRange(New ToolStripItem() {TiagoBarreoToolStripMenuItem})
         MenuStrip1.Location = New Point(827, 21)
         MenuStrip1.Name = "MenuStrip1"
@@ -189,14 +193,14 @@ Partial Class Form1
         ' 
         TiagoBarreoToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {PerfilToolStripMenuItem1, ConfiguraçãoToolStripMenuItem, BloquearSistemaToolStripMenuItem1, BloquearSistemaToolStripMenuItem2})
         TiagoBarreoToolStripMenuItem.Name = "TiagoBarreoToolStripMenuItem"
-        TiagoBarreoToolStripMenuItem.Size = New Size(89, 20)
+        TiagoBarreoToolStripMenuItem.Size = New Size(114, 20)
         TiagoBarreoToolStripMenuItem.Text = "Tiago Barreto"
         ' 
         ' PerfilToolStripMenuItem1
         ' 
         PerfilToolStripMenuItem1.Image = My.Resources.Resources.user_icon_icons_com_57997
         PerfilToolStripMenuItem1.Name = "PerfilToolStripMenuItem1"
-        PerfilToolStripMenuItem1.Size = New Size(165, 22)
+        PerfilToolStripMenuItem1.Size = New Size(208, 26)
         PerfilToolStripMenuItem1.Text = "Perfil"
         PerfilToolStripMenuItem1.TextImageRelation = TextImageRelation.TextBeforeImage
         ' 
@@ -204,40 +208,40 @@ Partial Class Form1
         ' 
         ConfiguraçãoToolStripMenuItem.Image = My.Resources.Resources.fullconfiguration_settings_4501
         ConfiguraçãoToolStripMenuItem.Name = "ConfiguraçãoToolStripMenuItem"
-        ConfiguraçãoToolStripMenuItem.Size = New Size(165, 22)
+        ConfiguraçãoToolStripMenuItem.Size = New Size(208, 26)
         ConfiguraçãoToolStripMenuItem.Text = "Configurações"
         ' 
         ' BloquearSistemaToolStripMenuItem1
         ' 
         BloquearSistemaToolStripMenuItem1.Name = "BloquearSistemaToolStripMenuItem1"
-        BloquearSistemaToolStripMenuItem1.Size = New Size(162, 6)
+        BloquearSistemaToolStripMenuItem1.Size = New Size(205, 6)
         ' 
         ' BloquearSistemaToolStripMenuItem2
         ' 
         BloquearSistemaToolStripMenuItem2.Image = My.Resources.Resources.lock_padlock_symbol_for_protect_icon_icons_com_56926
         BloquearSistemaToolStripMenuItem2.Name = "BloquearSistemaToolStripMenuItem2"
-        BloquearSistemaToolStripMenuItem2.Size = New Size(165, 22)
+        BloquearSistemaToolStripMenuItem2.Size = New Size(208, 26)
         BloquearSistemaToolStripMenuItem2.Text = "Bloquear Sistema"
         ' 
-        ' PictureBox8
+        ' PicConfiguracoes
         ' 
-        PictureBox8.Image = CType(resources.GetObject("PictureBox8.Image"), Image)
-        PictureBox8.Location = New Point(449, 8)
-        PictureBox8.Name = "PictureBox8"
-        PictureBox8.Size = New Size(50, 50)
-        PictureBox8.SizeMode = PictureBoxSizeMode.Zoom
-        PictureBox8.TabIndex = 1
-        PictureBox8.TabStop = False
+        PicConfiguracoes.Image = CType(resources.GetObject("PicConfiguracoes.Image"), Image)
+        PicConfiguracoes.Location = New Point(449, 8)
+        PicConfiguracoes.Name = "PicConfiguracoes"
+        PicConfiguracoes.Size = New Size(50, 50)
+        PicConfiguracoes.SizeMode = PictureBoxSizeMode.Zoom
+        PicConfiguracoes.TabIndex = 1
+        PicConfiguracoes.TabStop = False
         ' 
-        ' PictureBox7
+        ' PicAjuda
         ' 
-        PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), Image)
-        PictureBox7.Location = New Point(393, 8)
-        PictureBox7.Name = "PictureBox7"
-        PictureBox7.Size = New Size(50, 50)
-        PictureBox7.SizeMode = PictureBoxSizeMode.Zoom
-        PictureBox7.TabIndex = 1
-        PictureBox7.TabStop = False
+        PicAjuda.Image = My.Resources.Resources.Help_icon_icons_com_73700
+        PicAjuda.Location = New Point(393, 8)
+        PicAjuda.Name = "PicAjuda"
+        PicAjuda.Size = New Size(50, 50)
+        PicAjuda.SizeMode = PictureBoxSizeMode.Zoom
+        PicAjuda.TabIndex = 1
+        PicAjuda.TabStop = False
         ' 
         ' PictureBox5
         ' 
@@ -351,7 +355,7 @@ Partial Class Form1
         Label2.ForeColor = SystemColors.ControlDarkDark
         Label2.Location = New Point(63, 167)
         Label2.Name = "Label2"
-        Label2.Size = New Size(43, 13)
+        Label2.Size = New Size(55, 17)
         Label2.TabIndex = 1
         Label2.Text = "Gerente"
         ' 
@@ -361,7 +365,7 @@ Partial Class Form1
         Label1.Font = New Font("Corbel", 9F, FontStyle.Regular, GraphicsUnit.Point)
         Label1.Location = New Point(46, 147)
         Label1.Name = "Label1"
-        Label1.Size = New Size(74, 14)
+        Label1.Size = New Size(91, 18)
         Label1.TabIndex = 1
         Label1.Text = "Tiago Barreto"
         ' 
@@ -394,6 +398,7 @@ Partial Class Form1
         MenuStrip2.AutoSize = False
         MenuStrip2.BackColor = Color.Transparent
         MenuStrip2.Dock = DockStyle.None
+        MenuStrip2.ImageScalingSize = New Size(20, 20)
         MenuStrip2.Items.AddRange(New ToolStripItem() {ToolStripMenuItem1})
         MenuStrip2.Location = New Point(645, 16)
         MenuStrip2.Name = "MenuStrip2"
@@ -405,14 +410,14 @@ Partial Class Form1
         ' 
         ToolStripMenuItem1.DropDownItems.AddRange(New ToolStripItem() {ToolStripMenuItem2, ToolStripMenuItem3, ToolStripSeparator1, ToolStripMenuItem4})
         ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        ToolStripMenuItem1.Size = New Size(103, 20)
+        ToolStripMenuItem1.Size = New Size(130, 20)
         ToolStripMenuItem1.Text = "Opções Rapidas"
         ' 
         ' ToolStripMenuItem2
         ' 
         ToolStripMenuItem2.Image = My.Resources.Resources.user_icon_icons_com_57997
         ToolStripMenuItem2.Name = "ToolStripMenuItem2"
-        ToolStripMenuItem2.Size = New Size(165, 22)
+        ToolStripMenuItem2.Size = New Size(208, 26)
         ToolStripMenuItem2.Text = "Opções"
         ToolStripMenuItem2.TextImageRelation = TextImageRelation.TextBeforeImage
         ' 
@@ -420,19 +425,19 @@ Partial Class Form1
         ' 
         ToolStripMenuItem3.Image = My.Resources.Resources.fullconfiguration_settings_4501
         ToolStripMenuItem3.Name = "ToolStripMenuItem3"
-        ToolStripMenuItem3.Size = New Size(165, 22)
+        ToolStripMenuItem3.Size = New Size(208, 26)
         ToolStripMenuItem3.Text = "Configurações"
         ' 
         ' ToolStripSeparator1
         ' 
         ToolStripSeparator1.Name = "ToolStripSeparator1"
-        ToolStripSeparator1.Size = New Size(162, 6)
+        ToolStripSeparator1.Size = New Size(205, 6)
         ' 
         ' ToolStripMenuItem4
         ' 
         ToolStripMenuItem4.Image = My.Resources.Resources.lock_padlock_symbol_for_protect_icon_icons_com_56926
         ToolStripMenuItem4.Name = "ToolStripMenuItem4"
-        ToolStripMenuItem4.Size = New Size(165, 22)
+        ToolStripMenuItem4.Size = New Size(208, 26)
         ToolStripMenuItem4.Text = "Bloquear Sistema"
         ' 
         ' Label4
@@ -441,7 +446,7 @@ Partial Class Form1
         Label4.Font = New Font("Corbel", 9F, FontStyle.Regular, GraphicsUnit.Point)
         Label4.Location = New Point(28, 26)
         Label4.Name = "Label4"
-        Label4.Size = New Size(171, 14)
+        Label4.Size = New Size(209, 18)
         Label4.TabIndex = 0
         Label4.Text = "Painel / Resumo Geral do Sistema"
         ' 
@@ -451,7 +456,7 @@ Partial Class Form1
         Label3.Font = New Font("Corbel", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label3.Location = New Point(28, 3)
         Label3.Name = "Label3"
-        Label3.Size = New Size(50, 19)
+        Label3.Size = New Size(62, 24)
         Label3.TabIndex = 0
         Label3.Text = "Painel"
         ' 
@@ -471,7 +476,7 @@ Partial Class Form1
         Label5.Font = New Font("Corbel", 9F, FontStyle.Regular, GraphicsUnit.Point)
         Label5.Location = New Point(27, 9)
         Label5.Name = "Label5"
-        Label5.Size = New Size(80, 14)
+        Label5.Size = New Size(103, 18)
         Label5.TabIndex = 1
         Label5.Text = "Copyright 2023"
         ' 
@@ -511,7 +516,7 @@ Partial Class Form1
         Label13.Font = New Font("Corbel", 9F, FontStyle.Regular, GraphicsUnit.Point)
         Label13.Location = New Point(23, 64)
         Label13.Name = "Label13"
-        Label13.Size = New Size(104, 14)
+        Label13.Size = New Size(130, 18)
         Label13.TabIndex = 1
         Label13.Text = "Faturamento do Dia"
         ' 
@@ -531,7 +536,7 @@ Partial Class Form1
         Label14.Font = New Font("Ebrima", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label14.Location = New Point(23, 10)
         Label14.Name = "Label14"
-        Label14.Size = New Size(89, 21)
+        Label14.Size = New Size(109, 28)
         Label14.TabIndex = 1
         Label14.Text = "R$2.900,00"
         Label14.TextAlign = ContentAlignment.MiddleCenter
@@ -553,7 +558,7 @@ Partial Class Form1
         Label11.Font = New Font("Corbel", 9F, FontStyle.Regular, GraphicsUnit.Point)
         Label11.Location = New Point(13, 64)
         Label11.Name = "Label11"
-        Label11.Size = New Size(136, 14)
+        Label11.Size = New Size(170, 18)
         Label11.TabIndex = 1
         Label11.Text = "Faturamento do Mês Atual"
         ' 
@@ -573,7 +578,7 @@ Partial Class Form1
         Label12.Font = New Font("Ebrima", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label12.Location = New Point(13, 9)
         Label12.Name = "Label12"
-        Label12.Size = New Size(89, 21)
+        Label12.Size = New Size(109, 28)
         Label12.TabIndex = 1
         Label12.Text = "R$1.450,00"
         Label12.TextAlign = ContentAlignment.MiddleCenter
@@ -595,7 +600,7 @@ Partial Class Form1
         Label9.Font = New Font("Corbel", 9F, FontStyle.Regular, GraphicsUnit.Point)
         Label9.Location = New Point(14, 64)
         Label9.Name = "Label9"
-        Label9.Size = New Size(147, 14)
+        Label9.Size = New Size(188, 18)
         Label9.TabIndex = 1
         Label9.Text = "Produtos com estoqure baixo"
         ' 
@@ -615,7 +620,7 @@ Partial Class Form1
         Label10.Font = New Font("Ebrima", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label10.Location = New Point(14, 10)
         Label10.Name = "Label10"
-        Label10.Size = New Size(28, 21)
+        Label10.Size = New Size(34, 28)
         Label10.TabIndex = 1
         Label10.Text = "25"
         Label10.TextAlign = ContentAlignment.MiddleCenter
@@ -637,7 +642,7 @@ Partial Class Form1
         Label8.Font = New Font("Corbel", 9F, FontStyle.Regular, GraphicsUnit.Point)
         Label8.Location = New Point(23, 64)
         Label8.Name = "Label8"
-        Label8.Size = New Size(86, 14)
+        Label8.Size = New Size(105, 18)
         Label8.TabIndex = 1
         Label8.Text = "Total de clientes"
         ' 
@@ -657,7 +662,7 @@ Partial Class Form1
         Label7.Font = New Font("Ebrima", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label7.Location = New Point(23, 10)
         Label7.Name = "Label7"
-        Label7.Size = New Size(46, 21)
+        Label7.Size = New Size(56, 28)
         Label7.TabIndex = 1
         Label7.Text = "3458"
         Label7.TextAlign = ContentAlignment.MiddleCenter
@@ -713,7 +718,7 @@ Partial Class Form1
         Label17.ForeColor = SystemColors.Window
         Label17.Location = New Point(3, 10)
         Label17.Name = "Label17"
-        Label17.Size = New Size(107, 20)
+        Label17.Size = New Size(127, 25)
         Label17.TabIndex = 0
         Label17.Text = "Data e Hora"
         ' 
@@ -745,7 +750,7 @@ Partial Class Form1
         Label18.ForeColor = SystemColors.Window
         Label18.Location = New Point(3, 10)
         Label18.Name = "Label18"
-        Label18.Size = New Size(133, 20)
+        Label18.Size = New Size(161, 25)
         Label18.TabIndex = 0
         Label18.Text = "Licença de Uso"
         ' 
@@ -803,51 +808,55 @@ Partial Class Form1
         dvgTopClientes.AllowUserToDeleteRows = False
         dvgTopClientes.AllowUserToResizeColumns = False
         dvgTopClientes.AllowUserToResizeRows = False
-        dvgTopClientes.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
+        dvgTopClientes.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         dvgTopClientes.BackgroundColor = SystemColors.Window
         dvgTopClientes.BorderStyle = BorderStyle.None
         dvgTopClientes.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal
         dvgTopClientes.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle1.BackColor = SystemColors.Window
-        DataGridViewCellStyle1.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point)
-        DataGridViewCellStyle1.ForeColor = SystemColors.WindowText
-        DataGridViewCellStyle1.SelectionBackColor = SystemColors.Window
-        DataGridViewCellStyle1.SelectionForeColor = SystemColors.ControlText
-        DataGridViewCellStyle1.WrapMode = DataGridViewTriState.True
-        dvgTopClientes.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle5.BackColor = SystemColors.Window
+        DataGridViewCellStyle5.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        DataGridViewCellStyle5.ForeColor = SystemColors.WindowText
+        DataGridViewCellStyle5.SelectionBackColor = SystemColors.Window
+        DataGridViewCellStyle5.SelectionForeColor = SystemColors.ControlText
+        DataGridViewCellStyle5.WrapMode = DataGridViewTriState.True
+        dvgTopClientes.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
+        dvgTopClientes.ColumnHeadersHeight = 29
         dvgTopClientes.Columns.AddRange(New DataGridViewColumn() {codigo, cliente, gastos_mensal, gastos_anual, status})
-        DataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle4.BackColor = SystemColors.Window
-        DataGridViewCellStyle4.Font = New Font("Sans Serif Collection", 5F, FontStyle.Regular, GraphicsUnit.Point)
-        DataGridViewCellStyle4.ForeColor = SystemColors.ControlText
-        DataGridViewCellStyle4.SelectionBackColor = SystemColors.Window
-        DataGridViewCellStyle4.SelectionForeColor = SystemColors.Desktop
-        DataGridViewCellStyle4.WrapMode = DataGridViewTriState.False
-        dvgTopClientes.DefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle8.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle8.BackColor = SystemColors.Window
+        DataGridViewCellStyle8.Font = New Font("Microsoft Sans Serif", 5F, FontStyle.Regular, GraphicsUnit.Point)
+        DataGridViewCellStyle8.ForeColor = SystemColors.ControlText
+        DataGridViewCellStyle8.SelectionBackColor = SystemColors.Window
+        DataGridViewCellStyle8.SelectionForeColor = SystemColors.Desktop
+        DataGridViewCellStyle8.WrapMode = DataGridViewTriState.False
+        dvgTopClientes.DefaultCellStyle = DataGridViewCellStyle8
         dvgTopClientes.GridColor = SystemColors.Control
-        dvgTopClientes.Location = New Point(0, 291)
+        dvgTopClientes.Location = New Point(-5, 291)
         dvgTopClientes.Name = "dvgTopClientes"
         dvgTopClientes.ReadOnly = True
         dvgTopClientes.RowHeadersVisible = False
+        dvgTopClientes.RowHeadersWidth = 51
         dvgTopClientes.RowTemplate.Height = 30
-        dvgTopClientes.Size = New Size(838, 106)
+        dvgTopClientes.Size = New Size(841, 131)
         dvgTopClientes.TabIndex = 8
         ' 
         ' codigo
         ' 
         codigo.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
-        DataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter
-        codigo.DefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleCenter
+        codigo.DefaultCellStyle = DataGridViewCellStyle6
         codigo.HeaderText = "#"
+        codigo.MinimumWidth = 6
         codigo.Name = "codigo"
         codigo.ReadOnly = True
-        codigo.Width = 39
+        codigo.Width = 45
         ' 
         ' cliente
         ' 
         cliente.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
         cliente.HeaderText = "Nome do cliente"
+        cliente.MinimumWidth = 6
         cliente.Name = "cliente"
         cliente.ReadOnly = True
         ' 
@@ -855,28 +864,32 @@ Partial Class Form1
         ' 
         gastos_mensal.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
         gastos_mensal.HeaderText = "Gastos Mensal"
+        gastos_mensal.MinimumWidth = 6
         gastos_mensal.Name = "gastos_mensal"
         gastos_mensal.ReadOnly = True
         ' 
         ' gastos_anual
         ' 
-        DataGridViewCellStyle3.Font = New Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold, GraphicsUnit.Point)
-        DataGridViewCellStyle3.ForeColor = Color.Firebrick
-        gastos_anual.DefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle7.Font = New Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold, GraphicsUnit.Point)
+        DataGridViewCellStyle7.ForeColor = Color.Firebrick
+        gastos_anual.DefaultCellStyle = DataGridViewCellStyle7
         gastos_anual.HeaderText = "Gasto Anual"
+        gastos_anual.MinimumWidth = 6
         gastos_anual.Name = "gastos_anual"
         gastos_anual.ReadOnly = True
+        gastos_anual.Width = 125
         ' 
         ' status
         ' 
         status.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
         status.HeaderText = "Status"
+        status.MinimumWidth = 6
         status.Name = "status"
         status.ReadOnly = True
         ' 
         ' Label16
         ' 
-        Label16.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
+        Label16.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         Label16.BackColor = SystemColors.Window
         Label16.Font = New Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point)
         Label16.Image = My.Resources.Resources.stocks_graphic_with_a_magnifier_tool_icon_icons_com_70602
@@ -902,9 +915,19 @@ Partial Class Form1
         Label20.Text = "        Estastistica dos Produtos"
         Label20.TextAlign = ContentAlignment.MiddleLeft
         ' 
-        ' Form1
+        ' PicSobre
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        PicSobre.Image = My.Resources.Resources.book_bookmark_icon_34486
+        PicSobre.Location = New Point(505, 8)
+        PicSobre.Name = "PicSobre"
+        PicSobre.Size = New Size(50, 50)
+        PicSobre.SizeMode = PictureBoxSizeMode.Zoom
+        PicSobre.TabIndex = 1
+        PicSobre.TabStop = False
+        ' 
+        ' frmPrincipal
+        ' 
+        AutoScaleDimensions = New SizeF(9F, 18F)
         AutoScaleMode = AutoScaleMode.Font
         AutoScrollMargin = New Size(0, 10)
         ClientSize = New Size(1072, 749)
@@ -918,7 +941,7 @@ Partial Class Form1
         Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point)
         MainMenuStrip = MenuStrip1
         Margin = New Padding(3, 2, 3, 2)
-        Name = "Form1"
+        Name = "frmPrincipal"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Negócio Preciso"
         WindowState = FormWindowState.Maximized
@@ -927,8 +950,8 @@ Partial Class Form1
         CType(PictureBox6, ComponentModel.ISupportInitialize).EndInit()
         MenuStrip1.ResumeLayout(False)
         MenuStrip1.PerformLayout()
-        CType(PictureBox8, ComponentModel.ISupportInitialize).EndInit()
-        CType(PictureBox7, ComponentModel.ISupportInitialize).EndInit()
+        CType(PicConfiguracoes, ComponentModel.ISupportInitialize).EndInit()
+        CType(PicAjuda, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox5, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox4, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox3, ComponentModel.ISupportInitialize).EndInit()
@@ -964,6 +987,7 @@ Partial Class Form1
         Panel11.PerformLayout()
         Panel12.ResumeLayout(False)
         CType(dvgTopClientes, ComponentModel.ISupportInitialize).EndInit()
+        CType(PicSobre, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
 
@@ -982,8 +1006,8 @@ Partial Class Form1
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents ToolTip1 As ToolTip
     Friend WithEvents PictureBox6 As PictureBox
-    Friend WithEvents PictureBox8 As PictureBox
-    Friend WithEvents PictureBox7 As PictureBox
+    Friend WithEvents PicConfiguracoes As PictureBox
+    Friend WithEvents PicAjuda As PictureBox
     Friend WithEvents PictureBox5 As PictureBox
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents Panel5 As Panel
@@ -1039,4 +1063,5 @@ Partial Class Form1
     Friend WithEvents Panel14 As Panel
     Friend WithEvents gastos_mensal As DataGridViewTextBoxColumn
     Friend WithEvents gastos_anual As DataGridViewTextBoxColumn
+    Friend WithEvents PicSobre As PictureBox
 End Class

@@ -1,6 +1,6 @@
 ﻿Imports System.Xml
 
-Public Class Form1
+Public Class frmPrincipal
 
 
     Private Sub Form1_Load_1(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -30,6 +30,14 @@ Public Class Form1
 
 
         End With
+    End Sub
+
+    Private Sub PicAjuda_Click(sender As Object, e As EventArgs) Handles PicAjuda.Click
+        frmAjuda.ShowDialog()
+    End Sub
+
+    Private Sub PicSobre_Click(sender As Object, e As EventArgs) Handles PicSobre.Click
+        frmSobre.ShowDialog()
     End Sub
 
     'Private Sub dvgTopClientes_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dvgTopClientes.CellFormatting
