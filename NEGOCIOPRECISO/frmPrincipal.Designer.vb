@@ -24,10 +24,10 @@ Partial Class frmPrincipal
     Private Sub InitializeComponent()
         components = New ComponentModel.Container()
         Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(frmPrincipal))
-        Dim DataGridViewCellStyle9 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle12 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle10 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle11 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Panel1 = New Panel()
         imgSair = New PictureBox()
         PictureBox6 = New PictureBox()
@@ -44,6 +44,8 @@ Partial Class frmPrincipal
         PictureBox3 = New PictureBox()
         PictureBox1 = New PictureBox()
         Panel2 = New Panel()
+        Button7 = New Button()
+        Button6 = New Button()
         Button5 = New Button()
         Button4 = New Button()
         Button3 = New Button()
@@ -102,8 +104,6 @@ Partial Class frmPrincipal
         status = New DataGridViewTextBoxColumn()
         Label16 = New Label()
         Label20 = New Label()
-        Button6 = New Button()
-        Button7 = New Button()
         Panel1.SuspendLayout()
         CType(imgSair, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox6, ComponentModel.ISupportInitialize).BeginInit()
@@ -195,14 +195,14 @@ Partial Class frmPrincipal
         ' 
         TiagoBarreoToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {PerfilToolStripMenuItem1, ConfiguraçãoToolStripMenuItem, BloquearSistemaToolStripMenuItem1, BloquearSistemaToolStripMenuItem2})
         TiagoBarreoToolStripMenuItem.Name = "TiagoBarreoToolStripMenuItem"
-        TiagoBarreoToolStripMenuItem.Size = New Size(114, 20)
+        TiagoBarreoToolStripMenuItem.Size = New Size(89, 20)
         TiagoBarreoToolStripMenuItem.Text = "Tiago Barreto"
         ' 
         ' PerfilToolStripMenuItem1
         ' 
         PerfilToolStripMenuItem1.Image = My.Resources.Resources.user_icon_icons_com_57997
         PerfilToolStripMenuItem1.Name = "PerfilToolStripMenuItem1"
-        PerfilToolStripMenuItem1.Size = New Size(208, 26)
+        PerfilToolStripMenuItem1.Size = New Size(169, 26)
         PerfilToolStripMenuItem1.Text = "Perfil"
         PerfilToolStripMenuItem1.TextImageRelation = TextImageRelation.TextBeforeImage
         ' 
@@ -210,19 +210,19 @@ Partial Class frmPrincipal
         ' 
         ConfiguraçãoToolStripMenuItem.Image = My.Resources.Resources.fullconfiguration_settings_4501
         ConfiguraçãoToolStripMenuItem.Name = "ConfiguraçãoToolStripMenuItem"
-        ConfiguraçãoToolStripMenuItem.Size = New Size(208, 26)
+        ConfiguraçãoToolStripMenuItem.Size = New Size(169, 26)
         ConfiguraçãoToolStripMenuItem.Text = "Configurações"
         ' 
         ' BloquearSistemaToolStripMenuItem1
         ' 
         BloquearSistemaToolStripMenuItem1.Name = "BloquearSistemaToolStripMenuItem1"
-        BloquearSistemaToolStripMenuItem1.Size = New Size(205, 6)
+        BloquearSistemaToolStripMenuItem1.Size = New Size(166, 6)
         ' 
         ' BloquearSistemaToolStripMenuItem2
         ' 
         BloquearSistemaToolStripMenuItem2.Image = My.Resources.Resources.lock_padlock_symbol_for_protect_icon_icons_com_56926
         BloquearSistemaToolStripMenuItem2.Name = "BloquearSistemaToolStripMenuItem2"
-        BloquearSistemaToolStripMenuItem2.Size = New Size(208, 26)
+        BloquearSistemaToolStripMenuItem2.Size = New Size(169, 26)
         BloquearSistemaToolStripMenuItem2.Text = "Bloquear Sistema"
         ' 
         ' PicConfiguracoes
@@ -303,6 +303,48 @@ Partial Class frmPrincipal
         Panel2.Size = New Size(182, 683)
         Panel2.TabIndex = 1
         ' 
+        ' Button7
+        ' 
+        Button7.BackColor = SystemColors.GradientActiveCaption
+        Button7.Cursor = Cursors.Hand
+        Button7.Dock = DockStyle.Top
+        Button7.FlatAppearance.BorderColor = SystemColors.GradientActiveCaption
+        Button7.FlatAppearance.BorderSize = 0
+        Button7.FlatAppearance.MouseDownBackColor = SystemColors.ActiveCaption
+        Button7.FlatAppearance.MouseOverBackColor = SystemColors.ActiveCaption
+        Button7.FlatStyle = FlatStyle.Flat
+        Button7.Font = New Font("Corbel", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        Button7.ForeColor = SystemColors.ActiveCaptionText
+        Button7.Image = My.Resources.Resources._1486564179_finance_saving_81499
+        Button7.Location = New Point(0, 491)
+        Button7.Name = "Button7"
+        Button7.Size = New Size(182, 54)
+        Button7.TabIndex = 7
+        Button7.Text = "Controle Bancário"
+        Button7.TextImageRelation = TextImageRelation.ImageAboveText
+        Button7.UseVisualStyleBackColor = False
+        ' 
+        ' Button6
+        ' 
+        Button6.BackColor = SystemColors.GradientActiveCaption
+        Button6.Cursor = Cursors.Hand
+        Button6.Dock = DockStyle.Top
+        Button6.FlatAppearance.BorderColor = SystemColors.GradientActiveCaption
+        Button6.FlatAppearance.BorderSize = 0
+        Button6.FlatAppearance.MouseDownBackColor = SystemColors.ActiveCaption
+        Button6.FlatAppearance.MouseOverBackColor = SystemColors.ActiveCaption
+        Button6.FlatStyle = FlatStyle.Flat
+        Button6.Font = New Font("Corbel", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        Button6.ForeColor = SystemColors.ActiveCaptionText
+        Button6.Image = My.Resources.Resources.userpassword_deusuari_787
+        Button6.Location = New Point(0, 437)
+        Button6.Name = "Button6"
+        Button6.Size = New Size(182, 54)
+        Button6.TabIndex = 6
+        Button6.Text = "Usuarios"
+        Button6.TextImageRelation = TextImageRelation.ImageAboveText
+        Button6.UseVisualStyleBackColor = False
+        ' 
         ' Button5
         ' 
         Button5.BackColor = SystemColors.GradientActiveCaption
@@ -316,13 +358,12 @@ Partial Class frmPrincipal
         Button5.Font = New Font("Corbel", 9F, FontStyle.Regular, GraphicsUnit.Point)
         Button5.ForeColor = SystemColors.ActiveCaptionText
         Button5.Image = My.Resources.Resources._4_icon_icons_com_68889
-        Button5.ImageAlign = ContentAlignment.MiddleRight
-        Button5.Location = New Point(0, 308)
+        Button5.Location = New Point(0, 383)
         Button5.Name = "Button5"
-        Button5.Size = New Size(182, 29)
+        Button5.Size = New Size(182, 54)
         Button5.TabIndex = 5
         Button5.Text = "Faturamento"
-        Button5.TextImageRelation = TextImageRelation.ImageBeforeText
+        Button5.TextImageRelation = TextImageRelation.ImageAboveText
         Button5.UseVisualStyleBackColor = False
         ' 
         ' Button4
@@ -338,13 +379,12 @@ Partial Class frmPrincipal
         Button4.Font = New Font("Corbel", 9F, FontStyle.Regular, GraphicsUnit.Point)
         Button4.ForeColor = SystemColors.ActiveCaptionText
         Button4.Image = My.Resources.Resources.business_inventory_maintenance_product_box_boxes_2326
-        Button4.ImageAlign = ContentAlignment.MiddleRight
-        Button4.Location = New Point(0, 279)
+        Button4.Location = New Point(0, 329)
         Button4.Name = "Button4"
-        Button4.Size = New Size(182, 29)
+        Button4.Size = New Size(182, 54)
         Button4.TabIndex = 4
         Button4.Text = "Estoque"
-        Button4.TextImageRelation = TextImageRelation.ImageBeforeText
+        Button4.TextImageRelation = TextImageRelation.ImageAboveText
         Button4.UseVisualStyleBackColor = False
         ' 
         ' Button3
@@ -359,14 +399,13 @@ Partial Class frmPrincipal
         Button3.FlatStyle = FlatStyle.Flat
         Button3.Font = New Font("Corbel", 9F, FontStyle.Regular, GraphicsUnit.Point)
         Button3.ForeColor = SystemColors.ActiveCaptionText
-        Button3.Image = My.Resources.Resources.users_clients_group_16774__1_
-        Button3.ImageAlign = ContentAlignment.MiddleRight
-        Button3.Location = New Point(0, 250)
+        Button3.Image = My.Resources.Resources.team_work_88989
+        Button3.Location = New Point(0, 275)
         Button3.Name = "Button3"
-        Button3.Size = New Size(182, 29)
+        Button3.Size = New Size(182, 54)
         Button3.TabIndex = 3
         Button3.Text = "Funcionários"
-        Button3.TextImageRelation = TextImageRelation.ImageBeforeText
+        Button3.TextImageRelation = TextImageRelation.ImageAboveText
         Button3.UseVisualStyleBackColor = False
         ' 
         ' Button2
@@ -382,13 +421,12 @@ Partial Class frmPrincipal
         Button2.Font = New Font("Corbel", 9F, FontStyle.Regular, GraphicsUnit.Point)
         Button2.ForeColor = SystemColors.ActiveCaptionText
         Button2.Image = My.Resources.Resources.users_clients_group_16774__1_
-        Button2.ImageAlign = ContentAlignment.MiddleRight
         Button2.Location = New Point(0, 221)
         Button2.Name = "Button2"
-        Button2.Size = New Size(182, 29)
+        Button2.Size = New Size(182, 54)
         Button2.TabIndex = 2
         Button2.Text = "Clientes"
-        Button2.TextImageRelation = TextImageRelation.ImageBeforeText
+        Button2.TextImageRelation = TextImageRelation.ImageAboveText
         Button2.UseVisualStyleBackColor = False
         ' 
         ' Button1
@@ -428,7 +466,7 @@ Partial Class frmPrincipal
         Label2.ForeColor = SystemColors.ControlDarkDark
         Label2.Location = New Point(63, 167)
         Label2.Name = "Label2"
-        Label2.Size = New Size(55, 17)
+        Label2.Size = New Size(43, 13)
         Label2.TabIndex = 1
         Label2.Text = "Gerente"
         ' 
@@ -438,7 +476,7 @@ Partial Class frmPrincipal
         Label1.Font = New Font("Corbel", 9F, FontStyle.Regular, GraphicsUnit.Point)
         Label1.Location = New Point(46, 147)
         Label1.Name = "Label1"
-        Label1.Size = New Size(91, 18)
+        Label1.Size = New Size(74, 14)
         Label1.TabIndex = 1
         Label1.Text = "Tiago Barreto"
         ' 
@@ -483,14 +521,14 @@ Partial Class frmPrincipal
         ' 
         ToolStripMenuItem1.DropDownItems.AddRange(New ToolStripItem() {ToolStripMenuItem2, ToolStripMenuItem3, ToolStripSeparator1, ToolStripMenuItem4})
         ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        ToolStripMenuItem1.Size = New Size(130, 20)
+        ToolStripMenuItem1.Size = New Size(103, 20)
         ToolStripMenuItem1.Text = "Opções Rapidas"
         ' 
         ' ToolStripMenuItem2
         ' 
         ToolStripMenuItem2.Image = My.Resources.Resources.user_icon_icons_com_57997
         ToolStripMenuItem2.Name = "ToolStripMenuItem2"
-        ToolStripMenuItem2.Size = New Size(208, 26)
+        ToolStripMenuItem2.Size = New Size(169, 26)
         ToolStripMenuItem2.Text = "Opções"
         ToolStripMenuItem2.TextImageRelation = TextImageRelation.TextBeforeImage
         ' 
@@ -498,19 +536,19 @@ Partial Class frmPrincipal
         ' 
         ToolStripMenuItem3.Image = My.Resources.Resources.fullconfiguration_settings_4501
         ToolStripMenuItem3.Name = "ToolStripMenuItem3"
-        ToolStripMenuItem3.Size = New Size(208, 26)
+        ToolStripMenuItem3.Size = New Size(169, 26)
         ToolStripMenuItem3.Text = "Configurações"
         ' 
         ' ToolStripSeparator1
         ' 
         ToolStripSeparator1.Name = "ToolStripSeparator1"
-        ToolStripSeparator1.Size = New Size(205, 6)
+        ToolStripSeparator1.Size = New Size(166, 6)
         ' 
         ' ToolStripMenuItem4
         ' 
         ToolStripMenuItem4.Image = My.Resources.Resources.lock_padlock_symbol_for_protect_icon_icons_com_56926
         ToolStripMenuItem4.Name = "ToolStripMenuItem4"
-        ToolStripMenuItem4.Size = New Size(208, 26)
+        ToolStripMenuItem4.Size = New Size(169, 26)
         ToolStripMenuItem4.Text = "Bloquear Sistema"
         ' 
         ' Label4
@@ -519,7 +557,7 @@ Partial Class frmPrincipal
         Label4.Font = New Font("Corbel", 9F, FontStyle.Regular, GraphicsUnit.Point)
         Label4.Location = New Point(28, 26)
         Label4.Name = "Label4"
-        Label4.Size = New Size(209, 18)
+        Label4.Size = New Size(171, 14)
         Label4.TabIndex = 0
         Label4.Text = "Painel / Resumo Geral do Sistema"
         ' 
@@ -529,7 +567,7 @@ Partial Class frmPrincipal
         Label3.Font = New Font("Corbel", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label3.Location = New Point(28, 3)
         Label3.Name = "Label3"
-        Label3.Size = New Size(62, 24)
+        Label3.Size = New Size(50, 19)
         Label3.TabIndex = 0
         Label3.Text = "Painel"
         ' 
@@ -549,9 +587,9 @@ Partial Class frmPrincipal
         Label5.Font = New Font("Corbel", 9F, FontStyle.Regular, GraphicsUnit.Point)
         Label5.Location = New Point(27, 9)
         Label5.Name = "Label5"
-        Label5.Size = New Size(103, 18)
+        Label5.Size = New Size(71, 14)
         Label5.TabIndex = 1
-        Label5.Text = "Copyright 2023"
+        Label5.Text = "© TSoft 2023"
         ' 
         ' TableLayoutPanel1
         ' 
@@ -589,7 +627,7 @@ Partial Class frmPrincipal
         Label13.Font = New Font("Corbel", 9F, FontStyle.Regular, GraphicsUnit.Point)
         Label13.Location = New Point(23, 64)
         Label13.Name = "Label13"
-        Label13.Size = New Size(130, 18)
+        Label13.Size = New Size(104, 14)
         Label13.TabIndex = 1
         Label13.Text = "Faturamento do Dia"
         ' 
@@ -609,7 +647,7 @@ Partial Class frmPrincipal
         Label14.Font = New Font("Ebrima", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label14.Location = New Point(23, 10)
         Label14.Name = "Label14"
-        Label14.Size = New Size(109, 28)
+        Label14.Size = New Size(89, 21)
         Label14.TabIndex = 1
         Label14.Text = "R$2.900,00"
         Label14.TextAlign = ContentAlignment.MiddleCenter
@@ -631,7 +669,7 @@ Partial Class frmPrincipal
         Label11.Font = New Font("Corbel", 9F, FontStyle.Regular, GraphicsUnit.Point)
         Label11.Location = New Point(13, 64)
         Label11.Name = "Label11"
-        Label11.Size = New Size(170, 18)
+        Label11.Size = New Size(136, 14)
         Label11.TabIndex = 1
         Label11.Text = "Faturamento do Mês Atual"
         ' 
@@ -651,7 +689,7 @@ Partial Class frmPrincipal
         Label12.Font = New Font("Ebrima", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label12.Location = New Point(13, 9)
         Label12.Name = "Label12"
-        Label12.Size = New Size(109, 28)
+        Label12.Size = New Size(89, 21)
         Label12.TabIndex = 1
         Label12.Text = "R$1.450,00"
         Label12.TextAlign = ContentAlignment.MiddleCenter
@@ -673,7 +711,7 @@ Partial Class frmPrincipal
         Label9.Font = New Font("Corbel", 9F, FontStyle.Regular, GraphicsUnit.Point)
         Label9.Location = New Point(14, 64)
         Label9.Name = "Label9"
-        Label9.Size = New Size(188, 18)
+        Label9.Size = New Size(147, 14)
         Label9.TabIndex = 1
         Label9.Text = "Produtos com estoqure baixo"
         ' 
@@ -693,7 +731,7 @@ Partial Class frmPrincipal
         Label10.Font = New Font("Ebrima", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label10.Location = New Point(14, 10)
         Label10.Name = "Label10"
-        Label10.Size = New Size(34, 28)
+        Label10.Size = New Size(28, 21)
         Label10.TabIndex = 1
         Label10.Text = "25"
         Label10.TextAlign = ContentAlignment.MiddleCenter
@@ -715,7 +753,7 @@ Partial Class frmPrincipal
         Label8.Font = New Font("Corbel", 9F, FontStyle.Regular, GraphicsUnit.Point)
         Label8.Location = New Point(23, 64)
         Label8.Name = "Label8"
-        Label8.Size = New Size(105, 18)
+        Label8.Size = New Size(86, 14)
         Label8.TabIndex = 1
         Label8.Text = "Total de clientes"
         ' 
@@ -735,7 +773,7 @@ Partial Class frmPrincipal
         Label7.Font = New Font("Ebrima", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label7.Location = New Point(23, 10)
         Label7.Name = "Label7"
-        Label7.Size = New Size(56, 28)
+        Label7.Size = New Size(46, 21)
         Label7.TabIndex = 1
         Label7.Text = "3458"
         Label7.TextAlign = ContentAlignment.MiddleCenter
@@ -791,7 +829,7 @@ Partial Class frmPrincipal
         Label17.ForeColor = SystemColors.Window
         Label17.Location = New Point(3, 10)
         Label17.Name = "Label17"
-        Label17.Size = New Size(127, 25)
+        Label17.Size = New Size(107, 20)
         Label17.TabIndex = 0
         Label17.Text = "Data e Hora"
         ' 
@@ -823,7 +861,7 @@ Partial Class frmPrincipal
         Label18.ForeColor = SystemColors.Window
         Label18.Location = New Point(3, 10)
         Label18.Name = "Label18"
-        Label18.Size = New Size(161, 25)
+        Label18.Size = New Size(133, 20)
         Label18.TabIndex = 0
         Label18.Text = "Licença de Uso"
         ' 
@@ -886,24 +924,24 @@ Partial Class frmPrincipal
         dvgTopClientes.BorderStyle = BorderStyle.None
         dvgTopClientes.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal
         dvgTopClientes.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle9.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle9.BackColor = SystemColors.Window
-        DataGridViewCellStyle9.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point)
-        DataGridViewCellStyle9.ForeColor = SystemColors.WindowText
-        DataGridViewCellStyle9.SelectionBackColor = SystemColors.Window
-        DataGridViewCellStyle9.SelectionForeColor = SystemColors.ControlText
-        DataGridViewCellStyle9.WrapMode = DataGridViewTriState.True
-        dvgTopClientes.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle9
+        DataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = SystemColors.Window
+        DataGridViewCellStyle1.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        DataGridViewCellStyle1.ForeColor = SystemColors.WindowText
+        DataGridViewCellStyle1.SelectionBackColor = SystemColors.Window
+        DataGridViewCellStyle1.SelectionForeColor = SystemColors.ControlText
+        DataGridViewCellStyle1.WrapMode = DataGridViewTriState.True
+        dvgTopClientes.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         dvgTopClientes.ColumnHeadersHeight = 29
         dvgTopClientes.Columns.AddRange(New DataGridViewColumn() {codigo, cliente, gastos_mensal, gastos_anual, status})
-        DataGridViewCellStyle12.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle12.BackColor = SystemColors.Window
-        DataGridViewCellStyle12.Font = New Font("Microsoft Sans Serif", 5F, FontStyle.Regular, GraphicsUnit.Point)
-        DataGridViewCellStyle12.ForeColor = SystemColors.ControlText
-        DataGridViewCellStyle12.SelectionBackColor = SystemColors.Window
-        DataGridViewCellStyle12.SelectionForeColor = SystemColors.Desktop
-        DataGridViewCellStyle12.WrapMode = DataGridViewTriState.False
-        dvgTopClientes.DefaultCellStyle = DataGridViewCellStyle12
+        DataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle4.BackColor = SystemColors.Window
+        DataGridViewCellStyle4.Font = New Font("Microsoft Sans Serif", 5F, FontStyle.Regular, GraphicsUnit.Point)
+        DataGridViewCellStyle4.ForeColor = SystemColors.ControlText
+        DataGridViewCellStyle4.SelectionBackColor = SystemColors.Window
+        DataGridViewCellStyle4.SelectionForeColor = SystemColors.Desktop
+        DataGridViewCellStyle4.WrapMode = DataGridViewTriState.False
+        dvgTopClientes.DefaultCellStyle = DataGridViewCellStyle4
         dvgTopClientes.GridColor = SystemColors.Control
         dvgTopClientes.Location = New Point(-5, 291)
         dvgTopClientes.Name = "dvgTopClientes"
@@ -917,13 +955,13 @@ Partial Class frmPrincipal
         ' codigo
         ' 
         codigo.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
-        DataGridViewCellStyle10.Alignment = DataGridViewContentAlignment.MiddleCenter
-        codigo.DefaultCellStyle = DataGridViewCellStyle10
+        DataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter
+        codigo.DefaultCellStyle = DataGridViewCellStyle2
         codigo.HeaderText = "#"
         codigo.MinimumWidth = 6
         codigo.Name = "codigo"
         codigo.ReadOnly = True
-        codigo.Width = 45
+        codigo.Width = 39
         ' 
         ' cliente
         ' 
@@ -943,9 +981,9 @@ Partial Class frmPrincipal
         ' 
         ' gastos_anual
         ' 
-        DataGridViewCellStyle11.Font = New Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold, GraphicsUnit.Point)
-        DataGridViewCellStyle11.ForeColor = Color.Firebrick
-        gastos_anual.DefaultCellStyle = DataGridViewCellStyle11
+        DataGridViewCellStyle3.Font = New Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold, GraphicsUnit.Point)
+        DataGridViewCellStyle3.ForeColor = Color.Firebrick
+        gastos_anual.DefaultCellStyle = DataGridViewCellStyle3
         gastos_anual.HeaderText = "Gasto Anual"
         gastos_anual.MinimumWidth = 6
         gastos_anual.Name = "gastos_anual"
@@ -988,53 +1026,9 @@ Partial Class frmPrincipal
         Label20.Text = "        Estastistica dos Produtos"
         Label20.TextAlign = ContentAlignment.MiddleLeft
         ' 
-        ' Button6
-        ' 
-        Button6.BackColor = SystemColors.GradientActiveCaption
-        Button6.Cursor = Cursors.Hand
-        Button6.Dock = DockStyle.Top
-        Button6.FlatAppearance.BorderColor = SystemColors.GradientActiveCaption
-        Button6.FlatAppearance.BorderSize = 0
-        Button6.FlatAppearance.MouseDownBackColor = SystemColors.ActiveCaption
-        Button6.FlatAppearance.MouseOverBackColor = SystemColors.ActiveCaption
-        Button6.FlatStyle = FlatStyle.Flat
-        Button6.Font = New Font("Corbel", 9F, FontStyle.Regular, GraphicsUnit.Point)
-        Button6.ForeColor = SystemColors.ActiveCaptionText
-        Button6.Image = My.Resources.Resources._4_icon_icons_com_68889
-        Button6.ImageAlign = ContentAlignment.MiddleRight
-        Button6.Location = New Point(0, 337)
-        Button6.Name = "Button6"
-        Button6.Size = New Size(182, 29)
-        Button6.TabIndex = 6
-        Button6.Text = "Usuarios"
-        Button6.TextImageRelation = TextImageRelation.ImageBeforeText
-        Button6.UseVisualStyleBackColor = False
-        ' 
-        ' Button7
-        ' 
-        Button7.BackColor = SystemColors.GradientActiveCaption
-        Button7.Cursor = Cursors.Hand
-        Button7.Dock = DockStyle.Top
-        Button7.FlatAppearance.BorderColor = SystemColors.GradientActiveCaption
-        Button7.FlatAppearance.BorderSize = 0
-        Button7.FlatAppearance.MouseDownBackColor = SystemColors.ActiveCaption
-        Button7.FlatAppearance.MouseOverBackColor = SystemColors.ActiveCaption
-        Button7.FlatStyle = FlatStyle.Flat
-        Button7.Font = New Font("Corbel", 9F, FontStyle.Regular, GraphicsUnit.Point)
-        Button7.ForeColor = SystemColors.ActiveCaptionText
-        Button7.Image = My.Resources.Resources._1486564179_finance_saving_81499
-        Button7.ImageAlign = ContentAlignment.MiddleRight
-        Button7.Location = New Point(0, 366)
-        Button7.Name = "Button7"
-        Button7.Size = New Size(182, 29)
-        Button7.TabIndex = 7
-        Button7.Text = "Controle Bancário"
-        Button7.TextImageRelation = TextImageRelation.ImageBeforeText
-        Button7.UseVisualStyleBackColor = False
-        ' 
         ' frmPrincipal
         ' 
-        AutoScaleDimensions = New SizeF(9F, 18F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         AutoScrollMargin = New Size(0, 10)
         ClientSize = New Size(1072, 749)

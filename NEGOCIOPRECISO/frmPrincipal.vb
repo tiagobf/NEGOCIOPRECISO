@@ -23,7 +23,7 @@ Public Class frmPrincipal
         With dvgTopClientes
             .Rows.Add(1, "Tiago Barreto", "R$6.500,00", "R23.200,00", "Ativo")
             .Rows.Add(2, "Augsto Farias", "R$2.300,00", "R18.700,00", "Ativo")
-            .Rows.Add(3, "Lorena Barreto", "R$4.250,00", "R25.000,00", "Ativo")
+            .Rows.Add(3, "Davi Lucas", "R$4.250,00", "R25.000,00", "Ativo")
             .Rows.Add(4, "Daniela Magalhães", "R$1.758,00", "R19.450,12", "Intivo")
             .Rows.Add(5, "Stive Wander", "R$2.600,00", "R21.030,33", "Ativo")
             .BackgroundColor = Color.WhiteSmoke
@@ -38,6 +38,10 @@ Public Class frmPrincipal
 
     Private Sub PicSobre_Click(sender As Object, e As EventArgs) Handles PicSobre.Click
         frmSobre.ShowDialog()
+    End Sub
+
+    Private Sub dvgTopClientes_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dvgTopClientes.CellContentClick
+
     End Sub
 
     'Private Sub dvgTopClientes_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dvgTopClientes.CellFormatting
