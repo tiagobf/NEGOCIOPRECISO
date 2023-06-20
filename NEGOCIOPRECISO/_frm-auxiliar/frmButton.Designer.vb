@@ -32,6 +32,7 @@ Partial Class frmButton
         ' Button1
         ' 
         Button1.BackColor = Color.FromArgb(CByte(94), CByte(186), CByte(200))
+        Button1.Cursor = Cursors.Hand
         Button1.FlatAppearance.BorderSize = 0
         Button1.FlatStyle = FlatStyle.Flat
         Button1.ForeColor = SystemColors.Window
@@ -45,6 +46,7 @@ Partial Class frmButton
         ' Button2
         ' 
         Button2.BackColor = Color.FromArgb(CByte(94), CByte(186), CByte(149))
+        Button2.Cursor = Cursors.Hand
         Button2.FlatAppearance.BorderSize = 0
         Button2.FlatStyle = FlatStyle.Flat
         Button2.ForeColor = SystemColors.Window
@@ -58,6 +60,7 @@ Partial Class frmButton
         ' Button3
         ' 
         Button3.BackColor = Color.FromArgb(CByte(207), CByte(114), CByte(114))
+        Button3.Cursor = Cursors.Hand
         Button3.FlatAppearance.BorderSize = 0
         Button3.FlatStyle = FlatStyle.Flat
         Button3.ForeColor = SystemColors.Window
@@ -71,6 +74,7 @@ Partial Class frmButton
         ' Button4
         ' 
         Button4.BackColor = Color.FromArgb(CByte(213), CByte(214), CByte(106))
+        Button4.Cursor = Cursors.Hand
         Button4.FlatAppearance.BorderSize = 0
         Button4.FlatStyle = FlatStyle.Flat
         Button4.ForeColor = SystemColors.Window
@@ -84,6 +88,7 @@ Partial Class frmButton
         ' Button5
         ' 
         Button5.BackColor = Color.Gray
+        Button5.Cursor = Cursors.Hand
         Button5.FlatAppearance.BorderSize = 0
         Button5.FlatStyle = FlatStyle.Flat
         Button5.ForeColor = SystemColors.Window

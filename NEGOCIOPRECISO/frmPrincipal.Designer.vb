@@ -24,10 +24,10 @@ Partial Class frmPrincipal
     Private Sub InitializeComponent()
         components = New ComponentModel.Container()
         Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(frmPrincipal))
-        Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle9 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle12 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle10 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle11 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Panel1 = New Panel()
         imgSair = New PictureBox()
         PictureBox6 = New PictureBox()
@@ -44,6 +44,9 @@ Partial Class frmPrincipal
         PictureBox3 = New PictureBox()
         PictureBox1 = New PictureBox()
         Panel2 = New Panel()
+        Button5 = New Button()
+        Button4 = New Button()
+        Button3 = New Button()
         Button2 = New Button()
         Button1 = New Button()
         Panel4 = New Panel()
@@ -99,6 +102,8 @@ Partial Class frmPrincipal
         status = New DataGridViewTextBoxColumn()
         Label16 = New Label()
         Label20 = New Label()
+        Button6 = New Button()
+        Button7 = New Button()
         Panel1.SuspendLayout()
         CType(imgSair, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox6, ComponentModel.ISupportInitialize).BeginInit()
@@ -284,6 +289,11 @@ Partial Class frmPrincipal
         ' Panel2
         ' 
         Panel2.BackColor = SystemColors.GradientActiveCaption
+        Panel2.Controls.Add(Button7)
+        Panel2.Controls.Add(Button6)
+        Panel2.Controls.Add(Button5)
+        Panel2.Controls.Add(Button4)
+        Panel2.Controls.Add(Button3)
         Panel2.Controls.Add(Button2)
         Panel2.Controls.Add(Button1)
         Panel2.Controls.Add(Panel4)
@@ -292,6 +302,72 @@ Partial Class frmPrincipal
         Panel2.Name = "Panel2"
         Panel2.Size = New Size(182, 683)
         Panel2.TabIndex = 1
+        ' 
+        ' Button5
+        ' 
+        Button5.BackColor = SystemColors.GradientActiveCaption
+        Button5.Cursor = Cursors.Hand
+        Button5.Dock = DockStyle.Top
+        Button5.FlatAppearance.BorderColor = SystemColors.GradientActiveCaption
+        Button5.FlatAppearance.BorderSize = 0
+        Button5.FlatAppearance.MouseDownBackColor = SystemColors.ActiveCaption
+        Button5.FlatAppearance.MouseOverBackColor = SystemColors.ActiveCaption
+        Button5.FlatStyle = FlatStyle.Flat
+        Button5.Font = New Font("Corbel", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        Button5.ForeColor = SystemColors.ActiveCaptionText
+        Button5.Image = My.Resources.Resources._4_icon_icons_com_68889
+        Button5.ImageAlign = ContentAlignment.MiddleRight
+        Button5.Location = New Point(0, 308)
+        Button5.Name = "Button5"
+        Button5.Size = New Size(182, 29)
+        Button5.TabIndex = 5
+        Button5.Text = "Faturamento"
+        Button5.TextImageRelation = TextImageRelation.ImageBeforeText
+        Button5.UseVisualStyleBackColor = False
+        ' 
+        ' Button4
+        ' 
+        Button4.BackColor = SystemColors.GradientActiveCaption
+        Button4.Cursor = Cursors.Hand
+        Button4.Dock = DockStyle.Top
+        Button4.FlatAppearance.BorderColor = SystemColors.GradientActiveCaption
+        Button4.FlatAppearance.BorderSize = 0
+        Button4.FlatAppearance.MouseDownBackColor = SystemColors.ActiveCaption
+        Button4.FlatAppearance.MouseOverBackColor = SystemColors.ActiveCaption
+        Button4.FlatStyle = FlatStyle.Flat
+        Button4.Font = New Font("Corbel", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        Button4.ForeColor = SystemColors.ActiveCaptionText
+        Button4.Image = My.Resources.Resources.business_inventory_maintenance_product_box_boxes_2326
+        Button4.ImageAlign = ContentAlignment.MiddleRight
+        Button4.Location = New Point(0, 279)
+        Button4.Name = "Button4"
+        Button4.Size = New Size(182, 29)
+        Button4.TabIndex = 4
+        Button4.Text = "Estoque"
+        Button4.TextImageRelation = TextImageRelation.ImageBeforeText
+        Button4.UseVisualStyleBackColor = False
+        ' 
+        ' Button3
+        ' 
+        Button3.BackColor = SystemColors.GradientActiveCaption
+        Button3.Cursor = Cursors.Hand
+        Button3.Dock = DockStyle.Top
+        Button3.FlatAppearance.BorderColor = SystemColors.GradientActiveCaption
+        Button3.FlatAppearance.BorderSize = 0
+        Button3.FlatAppearance.MouseDownBackColor = SystemColors.ActiveCaption
+        Button3.FlatAppearance.MouseOverBackColor = SystemColors.ActiveCaption
+        Button3.FlatStyle = FlatStyle.Flat
+        Button3.Font = New Font("Corbel", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        Button3.ForeColor = SystemColors.ActiveCaptionText
+        Button3.Image = My.Resources.Resources.users_clients_group_16774__1_
+        Button3.ImageAlign = ContentAlignment.MiddleRight
+        Button3.Location = New Point(0, 250)
+        Button3.Name = "Button3"
+        Button3.Size = New Size(182, 29)
+        Button3.TabIndex = 3
+        Button3.Text = "Funcionários"
+        Button3.TextImageRelation = TextImageRelation.ImageBeforeText
+        Button3.UseVisualStyleBackColor = False
         ' 
         ' Button2
         ' 
@@ -810,24 +886,24 @@ Partial Class frmPrincipal
         dvgTopClientes.BorderStyle = BorderStyle.None
         dvgTopClientes.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal
         dvgTopClientes.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle1.BackColor = SystemColors.Window
-        DataGridViewCellStyle1.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point)
-        DataGridViewCellStyle1.ForeColor = SystemColors.WindowText
-        DataGridViewCellStyle1.SelectionBackColor = SystemColors.Window
-        DataGridViewCellStyle1.SelectionForeColor = SystemColors.ControlText
-        DataGridViewCellStyle1.WrapMode = DataGridViewTriState.True
-        dvgTopClientes.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle9.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle9.BackColor = SystemColors.Window
+        DataGridViewCellStyle9.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        DataGridViewCellStyle9.ForeColor = SystemColors.WindowText
+        DataGridViewCellStyle9.SelectionBackColor = SystemColors.Window
+        DataGridViewCellStyle9.SelectionForeColor = SystemColors.ControlText
+        DataGridViewCellStyle9.WrapMode = DataGridViewTriState.True
+        dvgTopClientes.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle9
         dvgTopClientes.ColumnHeadersHeight = 29
         dvgTopClientes.Columns.AddRange(New DataGridViewColumn() {codigo, cliente, gastos_mensal, gastos_anual, status})
-        DataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle4.BackColor = SystemColors.Window
-        DataGridViewCellStyle4.Font = New Font("Microsoft Sans Serif", 5F, FontStyle.Regular, GraphicsUnit.Point)
-        DataGridViewCellStyle4.ForeColor = SystemColors.ControlText
-        DataGridViewCellStyle4.SelectionBackColor = SystemColors.Window
-        DataGridViewCellStyle4.SelectionForeColor = SystemColors.Desktop
-        DataGridViewCellStyle4.WrapMode = DataGridViewTriState.False
-        dvgTopClientes.DefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle12.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle12.BackColor = SystemColors.Window
+        DataGridViewCellStyle12.Font = New Font("Microsoft Sans Serif", 5F, FontStyle.Regular, GraphicsUnit.Point)
+        DataGridViewCellStyle12.ForeColor = SystemColors.ControlText
+        DataGridViewCellStyle12.SelectionBackColor = SystemColors.Window
+        DataGridViewCellStyle12.SelectionForeColor = SystemColors.Desktop
+        DataGridViewCellStyle12.WrapMode = DataGridViewTriState.False
+        dvgTopClientes.DefaultCellStyle = DataGridViewCellStyle12
         dvgTopClientes.GridColor = SystemColors.Control
         dvgTopClientes.Location = New Point(-5, 291)
         dvgTopClientes.Name = "dvgTopClientes"
@@ -841,8 +917,8 @@ Partial Class frmPrincipal
         ' codigo
         ' 
         codigo.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
-        DataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter
-        codigo.DefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle10.Alignment = DataGridViewContentAlignment.MiddleCenter
+        codigo.DefaultCellStyle = DataGridViewCellStyle10
         codigo.HeaderText = "#"
         codigo.MinimumWidth = 6
         codigo.Name = "codigo"
@@ -867,9 +943,9 @@ Partial Class frmPrincipal
         ' 
         ' gastos_anual
         ' 
-        DataGridViewCellStyle3.Font = New Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold, GraphicsUnit.Point)
-        DataGridViewCellStyle3.ForeColor = Color.Firebrick
-        gastos_anual.DefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle11.Font = New Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold, GraphicsUnit.Point)
+        DataGridViewCellStyle11.ForeColor = Color.Firebrick
+        gastos_anual.DefaultCellStyle = DataGridViewCellStyle11
         gastos_anual.HeaderText = "Gasto Anual"
         gastos_anual.MinimumWidth = 6
         gastos_anual.Name = "gastos_anual"
@@ -911,6 +987,50 @@ Partial Class frmPrincipal
         Label20.TabIndex = 0
         Label20.Text = "        Estastistica dos Produtos"
         Label20.TextAlign = ContentAlignment.MiddleLeft
+        ' 
+        ' Button6
+        ' 
+        Button6.BackColor = SystemColors.GradientActiveCaption
+        Button6.Cursor = Cursors.Hand
+        Button6.Dock = DockStyle.Top
+        Button6.FlatAppearance.BorderColor = SystemColors.GradientActiveCaption
+        Button6.FlatAppearance.BorderSize = 0
+        Button6.FlatAppearance.MouseDownBackColor = SystemColors.ActiveCaption
+        Button6.FlatAppearance.MouseOverBackColor = SystemColors.ActiveCaption
+        Button6.FlatStyle = FlatStyle.Flat
+        Button6.Font = New Font("Corbel", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        Button6.ForeColor = SystemColors.ActiveCaptionText
+        Button6.Image = My.Resources.Resources._4_icon_icons_com_68889
+        Button6.ImageAlign = ContentAlignment.MiddleRight
+        Button6.Location = New Point(0, 337)
+        Button6.Name = "Button6"
+        Button6.Size = New Size(182, 29)
+        Button6.TabIndex = 6
+        Button6.Text = "Usuarios"
+        Button6.TextImageRelation = TextImageRelation.ImageBeforeText
+        Button6.UseVisualStyleBackColor = False
+        ' 
+        ' Button7
+        ' 
+        Button7.BackColor = SystemColors.GradientActiveCaption
+        Button7.Cursor = Cursors.Hand
+        Button7.Dock = DockStyle.Top
+        Button7.FlatAppearance.BorderColor = SystemColors.GradientActiveCaption
+        Button7.FlatAppearance.BorderSize = 0
+        Button7.FlatAppearance.MouseDownBackColor = SystemColors.ActiveCaption
+        Button7.FlatAppearance.MouseOverBackColor = SystemColors.ActiveCaption
+        Button7.FlatStyle = FlatStyle.Flat
+        Button7.Font = New Font("Corbel", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        Button7.ForeColor = SystemColors.ActiveCaptionText
+        Button7.Image = My.Resources.Resources._1486564179_finance_saving_81499
+        Button7.ImageAlign = ContentAlignment.MiddleRight
+        Button7.Location = New Point(0, 366)
+        Button7.Name = "Button7"
+        Button7.Size = New Size(182, 29)
+        Button7.TabIndex = 7
+        Button7.Text = "Controle Bancário"
+        Button7.TextImageRelation = TextImageRelation.ImageBeforeText
+        Button7.UseVisualStyleBackColor = False
         ' 
         ' frmPrincipal
         ' 
@@ -1049,4 +1169,9 @@ Partial Class frmPrincipal
     Friend WithEvents gastos_mensal As DataGridViewTextBoxColumn
     Friend WithEvents gastos_anual As DataGridViewTextBoxColumn
     Friend WithEvents PicSobre As PictureBox
+    Friend WithEvents Button5 As Button
+    Friend WithEvents Button4 As Button
+    Friend WithEvents Button3 As Button
+    Friend WithEvents Button7 As Button
+    Friend WithEvents Button6 As Button
 End Class
