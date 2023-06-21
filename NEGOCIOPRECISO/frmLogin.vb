@@ -8,7 +8,8 @@
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-        Dispose()
+        'Dispose()
+        Me.Hide()
         frmPrincipal.ShowDialog()
     End Sub
 End Class
