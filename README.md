@@ -25,13 +25,14 @@
 # Telas da aplicação.
 
 ## Tela de login
-![image](https://github.com/tiagobf/NEGOCIOPRECISO/assets/13476665/005aadee-8d68-4e28-a5e9-84671dfa6660)
+![image](https://github.com/tiagobf/NEGOCIOPRECISO/assets/13476665/553ec4d1-6d2d-4092-9885-53ed3ea67ec7)
 
 ## Tela Principal
-![image](https://github.com/tiagobf/NEGOCIOPRECISO/assets/13476665/c5bb9371-9dd3-4f4e-b25a-b6689602d4d1)
+![image](https://github.com/tiagobf/NEGOCIOPRECISO/assets/13476665/ae24c7ac-0f83-4ced-8b23-c7ebe661afe4)
 
 ## Tela Sobre
-![image](https://github.com/tiagobf/NEGOCIOPRECISO/assets/13476665/7e923aa6-e1c5-41cd-99ed-9fb6d97cbacb)
+![image](https://github.com/tiagobf/NEGOCIOPRECISO/assets/13476665/718c8752-f4a2-477f-950a-3ecc15891f0c)
 
-Tela Ajuda
-![image](https://github.com/tiagobf/NEGOCIOPRECISO/assets/13476665/1ae48ffe-5dbd-4fcc-a227-0de250cd92ae)
+## Tela Ajuda
+![image](https://github.com/tiagobf/NEGOCIOPRECISO/assets/13476665/2b6a73c0-9147-4df7-b378-2a486d5e4d6b)
+
