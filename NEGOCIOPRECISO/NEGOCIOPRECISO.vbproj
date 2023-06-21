@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net6.0-windows</TargetFramework>
-    <StartupObject>NEGOCIOPRECISO.frmPrincipal</StartupObject>
+    <StartupObject>NEGOCIOPRECISO.frmLogin</StartupObject>
     <UseWindowsForms>true</UseWindowsForms>
     <MyType>WindowsForms</MyType>
     <ApplicationIcon>logo_transparent.ico</ApplicationIcon>

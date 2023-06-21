@@ -123,6 +123,26 @@ Namespace My.Resources
         '''<summary>
         '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property cup_of_coffee_1280537_1280() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("cup-of-coffee-1280537_1280", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property diagram_06_24511() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("diagram-06_24511", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property diagram_49_24468() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("diagram-49_24468", resourceCulture)
